@@ -13,5 +13,4 @@ deploy:
   keep_history: false
   local_dir: dist
   on:
-    branch: master
-    condition: $TRAVIS_TAG = deploy
+    branch: deploy
