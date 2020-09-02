@@ -29,21 +29,17 @@ tbody
 <style lang="sass" scoped>
 @import "../styles/consts"
 
-*
-    position: relative
-
 tbody > tr
-    color: $font-color
     line-height: 1.2
-    height: 3.125rem
+    height: 2.5rem
     font-weight: unset
+    color: $font-color-highlighted
 
     &:not(.group-header)
         will-change: background-color
         transition: background-color $default-transition-len
 
         &:hover
-            color: $font-color-highlighted
             background-color: $row-bg
 
         > .key
@@ -63,7 +59,7 @@ tbody > tr
 
             &:not(.empty)
                 width: 30%
-                background: #e6e6e6
+                background: #b2b2b2
 
     > th, td
         &:first-of-type
