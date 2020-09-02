@@ -53,7 +53,6 @@ export default {
         box-sizing: border-box
 
         > table
-            position: relative
             border-collapse: collapse
             background: white
             overflow: hidden
@@ -66,7 +65,6 @@ export default {
 
             > thead
                 td
-                    position: relative
                     height: 13rem
                     padding: 2rem 0 2rem 0
 
