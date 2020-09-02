@@ -1,0 +1,19 @@
+/*********************************************************************************
+ *  scrollbar.sass                                                               *
+ *  Author: Denes Solti                                                          *
+ *********************************************************************************/
+@import "consts"
+
+::-webkit-scrollbar
+  width: $scrollbar-size
+  height: $scrollbar-size
+
+::-webkit-scrollbar-thumb
+  background: rgba(0, 0, 0, .2)
+  border-radius: .3rem
+
+  &:hover
+    background: $blue
+
+::-webkit-scrollbar-track
+  background: none
