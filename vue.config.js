@@ -4,6 +4,7 @@
 ********************************************************************************/
 module.exports = {
   outputDir: 'dist',
+  publicPath: '',
   configureWebpack: {
     module: {
       rules: [
