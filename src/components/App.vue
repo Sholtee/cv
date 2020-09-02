@@ -6,12 +6,17 @@
 <template lang="pug">
 #app
     table
+        thead
+            tr
+                td(colspan="2")
+                    span {{content.name}}
+                    img(src="./../assets/avatar.jpg")
         CV-Heading(v-for="(data, title) in content.headings" :key="title" :title="title" :content="data")
 </template>
 
 <script>
 import content from  '../assets/content.json';
-import heading from './CV-Heading.vue'
+import heading from './CV-Heading.vue';
 
 export default {
   name: 'CV',
@@ -23,8 +28,6 @@ export default {
     return {
       content
     }
-  },
-  methods: {
   }
 };
 </script>
@@ -53,6 +56,26 @@ export default {
         text-align: center
         font-size: 1rem
         border: none
+
+        > thead
+            td
+                position: relative
+                height: 13rem
+                border-top: 2rem solid transparent
+                border-bottom: 2rem solid transparent
+
+                > img
+                    width: 14rem
+                    height: 14rem
+                    border-radius: 100%
+                    float: right
+
+                > span
+                    position: absolute
+                    font-size: 3rem
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
 
         @media (max-width: #{$table-width})
             margin-left: $min-margin

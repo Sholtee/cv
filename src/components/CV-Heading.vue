@@ -58,7 +58,7 @@ tbody > tr
 
         > th
             font-weight: bold
-            padding: $min-margin
+            padding-left: $min-margin
             text-align: left
 
             &:not(.empty)
