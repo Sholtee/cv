@@ -6,7 +6,8 @@
       "key2": "<i>italic</i> value2"
     },
     "heading2": {
-      "key1": "<b>bold</b>value1"
+      "key1": "<b>bold</b> value1",
+      "key2": "multi<br>line"
     }
   }
 }
