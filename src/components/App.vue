@@ -5,30 +5,43 @@
 
 <template lang="pug">
 #app
-    .table-holder
-        table
-            thead
-                tr
-                    td(colspan="2")
-                        span {{content.name}}
-                        img(src="./../assets/avatar.jpg")
-            CV-Heading(v-for="(data, title) in content.headings" :key="title" :title="title" :content="data")
+    CV-Table(v-if="!!content" :content="content")
 </template>
 
 <script>
-import content from  '../assets/content.json';
-import heading from './CV-Heading.vue';
+import contents from  '../assets/content.json';
+import table from './CV-Table.vue';
+import axios from 'axios';
 
 export default {
   name: 'CV',
   title: 'CV',
   components: {
-    "CV-Heading": heading
+    "CV-Table": table
   },
   data: function() {
     return {
-      content
+      contentIndex: false,
+      content: false
     }
+  },
+  watch: {
+    contentIndex(i) {
+      axios
+        .get(this.contents[i])
+        .then(content => this.content = content.data);
+    }
+  },
+  computed: {
+    contents() {
+      return contents.map(content => Object.values(content)[0]);
+    },
+    languages() {
+      return contents.map(content => Object.keys(content)[0]);
+    }
+  },
+  mounted() {
+    this.contentIndex = 0;
   }
 };
 </script>
@@ -42,47 +55,4 @@ export default {
     width: 100%
     height: 100%
     font-family: Roboto, sans-serif
-
-    &, & *
-        position: relative
-
-    > .table-holder
-        width: 100%
-        height: 100%
-        overflow-y: auto
-        box-sizing: border-box
-
-        > table
-            border-collapse: collapse
-            background: white
-            overflow: hidden
-            width: 100%
-            max-width: $table-width
-            margin: auto
-            text-align: center
-            font-size: 1rem
-            border: none
-
-            > thead
-                td
-                    height: 13rem
-                    padding: 2rem 0 2rem 0
-
-                    > img
-                        width: 14rem
-                        height: 14rem
-                        border-radius: 100%
-                        float: right
-
-                    > span
-                        position: absolute
-                        font-size: 3rem
-                        color: $font-color-highlighted
-                        top: 50%
-                        left: 50%
-                        transform: translate(-50%, -50%)
-
-        @media (max-width: #{$table-width})
-            padding-left: $min-margin
-            padding-right: $min-margin
 </style>

@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "vue": "^2.6.12",
+    "axios": "^0.20.0",
     "roboto-fontface": "^0.10.0"
   },
   "devDependencies": {
