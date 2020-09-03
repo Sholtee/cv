@@ -5,7 +5,9 @@
 
 <template lang="pug">
 #app
-    CV-Table(v-if="!!content" :content="content")
+    .language-selector
+        .flag-icon(v-for="language in languages" v-on:click="contentIndex = language" :class="{[`flag-icon-${language}`]: true, selected: language == contentIndex}")
+    CV-Table(v-if="content" :content="content")
 </template>
 
 <script>
@@ -26,22 +28,18 @@ export default {
     }
   },
   watch: {
-    contentIndex(i) {
-      axios
-        .get(this.contents[i])
-        .then(content => this.content = content.data);
+    async contentIndex(i) {
+      const content = await axios.get(contents[i]);
+      this.content = content.data;
     }
   },
   computed: {
-    contents() {
-      return contents.map(content => Object.values(content)[0]);
-    },
     languages() {
-      return contents.map(content => Object.keys(content)[0]);
+      return Object.keys(contents);
     }
   },
   mounted() {
-    this.contentIndex = 0;
+    this.contentIndex = this.languages[0];
   }
 };
 </script>
@@ -55,4 +53,27 @@ export default {
     width: 100%
     height: 100%
     font-family: Roboto, sans-serif
+
+    > .language-selector
+        position: absolute
+        display: flex
+        padding: calc(#{$min-margin} / 2)
+        z-index: 100
+
+        > .flag-icon
+            &:not(:first-of-type)
+                margin-left: calc(#{$min-margin} / 2)
+
+            &:not(.selected)
+                cursor: pointer
+
+            &.selected, &:hover
+                &:after
+                    content: ""
+                    position: absolute
+                    width: 100%
+                    height: 2px
+                    left: 0
+                    top: -0.5rem
+                    background-color: #85ffbb
 </style>
