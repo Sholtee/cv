@@ -10,7 +10,7 @@
             tr
                 td(colspan="2")
                     span(:data-subtitle="content.subtitle") {{content.title}}
-                    img(src="./../assets/avatar.jpg")
+                    img(:src="content.avatar")
         CV-Heading(v-for="(data, title) in content.headings" :key="title" :title="title" :content="data")
 </template>
 
