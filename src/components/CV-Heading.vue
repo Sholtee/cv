@@ -8,17 +8,23 @@
   Vue template-nek csak egy gyoker eleme lehet ezert a <table> alatt tobb <tbody> elemunk lesz ami teljesen valid:
   https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody
 tbody
-  tr.group-header
+  tr.group-header(v-once)
     th {{title | capitalize}}
     th.empty
   tr(v-for="(value, key) in content")
     td.key(v-html="key")
-    td.value(v-html="value")
+    td.value
+      CV-Cell(:data="value")
 </template>
 
 <script>
-  export default {
+import cell from './CV-Cell.vue';
+
+export default {
   name: 'CV-Heading',
+  components: {
+    'CV-Cell': cell
+  },
   props: {
     title: String,
     content: Object

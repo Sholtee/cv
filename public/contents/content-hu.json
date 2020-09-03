@@ -6,8 +6,14 @@
     "Személyes adatok": {
       "Születési hely, idő": "Pécs, 1986. október 26.",
       "Lakcím": "Pécs",
-      "Telefonszám": "+36-30/65-42-497",
-      "Email": "sodnaatx [at] gmail [dot] com"
+      "Telefonszám": {
+        "placeholder": "mutasd",
+        "text": "+36-30/65-42-497"
+      },
+      "Email": {
+        "placeholder": "mutasd",
+        "text": "<a href='mailto:sodnaatx@gmail.com'>sodnaatx@gmail.com</a>"
+      }
     },
     "Tanulmányok": {
       "<i>2005 – 2010</i>": "<b>Pécsi Tudományegyetem</b>",

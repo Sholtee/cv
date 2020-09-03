@@ -6,7 +6,7 @@
 <template lang="pug">
 .table-holder
     table
-        thead
+        thead(v-once)
             tr
                 td(colspan="2")
                     span(:data-subtitle="content.subtitle") {{content.title}}
