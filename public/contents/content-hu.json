@@ -1,13 +1,40 @@
 {
   "title": "Solti Dénes",
   "headings": {
-    "heading1": {
-      "key1": "value1",
-      "key2": "<i>italic</i> value2"
+    "Személyes adatok": {
+      "Születési hely, idő": "Pécs, 1986. október 26.",
+      "Lakcím": "Pécs",
+      "Telefonszám": "+36-30/65-42-497",
+      "Email": "sodnaatx [at] gmail [dot] com"
     },
-    "heading2": {
-      "key1": "<b>bold</b> value1",
-      "key2": "multi<br>line"
+    "Tanulmányok": {
+      "<i>2005 – 2010</i>": "<b>Pécsi Tudományegyetem</b>",
+      "Kar": "Természettudományi Kar",
+      "Szak": "Programtervező informatikus szak",
+      "Szakirány": "Alkalmazói szakirány",
+      "Záróvizsga": "Értékelés: 4",
+      "Diplomamunka": "<i>Rendszererőforrások monitorozása Yahoo minialkalmazással </i>, értékelés: 5",
+      "<i>2005</i>": "<i>Számítástechnikai-Szoftverüzemeltető</i> (OKJ), <i>ECDL</i> vizsga (5 modul)",
+      "<i>2001 – 205</i>": "<b>Széchenyi István Gimnázium</b>, emelt szintű informatika, Pécs"
+    },
+    "Fejlesztői ismeretek": {
+      "Kódszerkesztő": "Visual Studio, RAD Studio, Lazarus, WebStorm, LinqPad, MySQL Workbench, pgAdmin",
+      "Keretrendszer": ".NET, NodeJS, AngularJS (nem Angular), Vue, PhoneGap",
+      "Keretrendszer (teszt)": "NUnit, DUnit, Jasmine, Karma",
+      "Feladat automatizáció": "PowerShell, Grunt",
+      "CI": "AppVeyor, Travis",
+      "Programozási nyelvek": "C#, Delphi/Free Pascal, JS",
+      "Lekérdező nyelvek": "SQL (MySQL, PostgreSQL)",
+      "Leíró nyelvek": "PUG-HAML-HTML, SASS-SCSS-CSS",
+      "Verzió kezelés": "Git",
+      "GitHub": "<a href='https://github.com/sholtee'>github.com/sholtee</a>",
+      "Módszertan": "Scrum, XP, TDD, <strike>PDD (Panic Driven Development)</strike>"
+    },
+    "Szakmai tapasztalat": {
+
+    },
+    "Egyéb": {
+      "": "<b>Nyelvismeret:</b> angol (társalgás, dokumentáció írás), középfokú nyelvvizsga<br><br><b>Jogosítvány:</b> „B” kategóriás, saját kocsi"
     }
   }
 }

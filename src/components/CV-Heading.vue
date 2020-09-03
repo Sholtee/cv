@@ -12,7 +12,7 @@ tbody
     th {{title | capitalize}}
     th.empty
   tr(v-for="(value, key) in content")
-    td.key {{key | capitalize}}
+    td.key(v-html="key")
     td.value(v-html="value")
 </template>
 
