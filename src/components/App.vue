@@ -55,7 +55,7 @@ export default {
     font-family: Roboto, sans-serif
 
     > .language-selector
-        position: absolute
+        position: fixed
         display: flex
         padding: calc(#{$min-margin} / 2)
         z-index: 100
