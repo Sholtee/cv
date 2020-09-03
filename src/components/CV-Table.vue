@@ -9,7 +9,7 @@
         thead
             tr
                 td(colspan="2")
-                    span {{content.title}}
+                    span(:data-subtitle="content.subtitle") {{content.title}}
                     img(src="./../assets/avatar.jpg")
         CV-Heading(v-for="(data, title) in content.headings" :key="title" :title="title" :content="data")
 </template>
@@ -67,6 +67,12 @@ export default {
                     top: 50%
                     left: 50%
                     transform: translate(-50%, -50%)
+
+                    &:after
+                        content: attr(data-subtitle)
+                        font-size: 1rem
+                        display: block
+                        margin-top: $min-margin
 
     @media (max-width: #{$table-width})
         padding-left: $min-margin

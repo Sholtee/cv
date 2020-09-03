@@ -1,5 +1,6 @@
 {
   "title": "Solti Dénes",
+  "subtitle": "Senior Szoftverfejlesztő",
   "headings": {
     "Személyes adatok": {
       "Születési hely, idő": "Pécs, 1986. október 26.",
@@ -15,7 +16,7 @@
       "Záróvizsga": "Értékelés: 4",
       "Diplomamunka": "<i>Rendszererőforrások monitorozása Yahoo minialkalmazással </i>, értékelés: 5",
       "<i>2005</i>": "<i>Számítástechnikai-Szoftverüzemeltető</i> (OKJ), <i>ECDL</i> vizsga (5 modul)",
-      "<i>2001 – 205</i>": "<b>Széchenyi István Gimnázium</b>, emelt szintű informatika, Pécs"
+      "<i>2001 – 2005</i>": "<b>Széchenyi István Gimnázium</b>, emelt szintű informatika, Pécs"
     },
     "Fejlesztői ismeretek": {
       "Kódszerkesztő": "Visual Studio, RAD Studio, Lazarus, WebStorm, LinqPad, MySQL Workbench, pgAdmin",
