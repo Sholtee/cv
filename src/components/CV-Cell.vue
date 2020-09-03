@@ -4,9 +4,7 @@
 -->
 
 <template lang="pug">
-.span-holder
-    span(v-if="showText" v-html="data.text || data" v-once)
-    span.placeholder(v-else v-on:click="showText = true" v-html="data.placeholder" v-once)
+span(:class="{placeholder: !contentVisible}" v-on:click="contentVisible = true" v-html="contentVisible ? (data.text || data) : data.placeholder")
 </template>
 
 <script>
@@ -15,7 +13,7 @@ export default {
   props: ['data'],
   data: function() {
     return {
-      showText: typeof this.data === 'string'
+      contentVisible: typeof this.data === 'string'
     }
   }
 }
