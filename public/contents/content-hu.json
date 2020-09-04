@@ -36,10 +36,14 @@
       "Leíró nyelvek": "PUG-HAML-HTML, SASS-SCSS-CSS",
       "Verzió kezelés": "Git",
       "GitHub": "<a href='https://github.com/sholtee'>github.com/sholtee</a>",
-      "Módszertan": "Scrum, XP, TDD, <strike>PDD (Panic Driven Development)</strike>"
+      "Módszertanok": "Scrum, XP, TDD, <strike>PDD (Panic Driven Development)</strike>",
+      "Csomagkezelők": "NuGet, NPM"
     },
     "Szakmai tapasztalat": {
-
+      "<i>2010</i>": "<b>Baranya Megyei Főügyészség</b>, Pécs – IT alkalmazás üzemeltetés",
+      "<i>2011-2013</i>": "Szabadúszó (üzemeltetés, back-end fejlesztés)",
+      "<i>2013-2016</i>": "Gépikód Magyarország Zrt, BP - Fejlesztő (back-end, front-end)",
+      "<i>2016-jelenleg is</i>": "<b>Oktatási Hivatal</b>,  <strike>BP,</strike> Pécs H.O. (back-end, front-end), 2019 óta <i>Senior</i>"
     },
     "Egyéb": {
       "": "<b>Nyelvismeret:</b> angol (társalgás, dokumentáció írás), középfokú nyelvvizsga<br><br><b>Jogosítvány:</b> „B” kategóriás, saját kocsi"
