@@ -18,17 +18,17 @@
         "heading_1": {
           "key_1": "value1",
           "key_2": "value2",
-          "key_3": {  // secret
-            placeholder: "...",
-            text: "..."
+          "key_3": {
+            "placeholder": "...",
+            "text": "..."
           } 
         },
         "heading_2": {
-          ...
+     
         }
       }
     }
     ```
 6. Commit your changes
 7. Tag the commit with "deploy" (after successful publish you can remove the tag)
-8. After the CI succeeded your CV will be available at `YourName.github.io/cv`
+8. After the CI succeeded your CV will be available at `YourName.github.io/cv` and looks like [this](sholtee.github.io/cv )
