@@ -4,7 +4,7 @@
 -->
 
 <template lang="pug">
-td(:class="{placeholder: !contentVisible}" v-on:click="contentVisible = true" v-html="contentVisible ? (value.text || value) : value.placeholder")
+td(:class="{placeholder: !content.visible}" v-on:click="content.visible = true" v-html="content.visible ? content.text : content.placeholder")
 </template>
 
 <script>
@@ -12,9 +12,13 @@ export default {
   name: 'CV-Cell',
   props: ['value'],
   data: function() {
+    const {value} = this;
+
     return {
-      contentVisible: typeof this.value === 'string'
-    }
+      content: typeof value === 'string'
+        ? {text: value, visible: true}
+        : {...value, visible: false}
+    };
   }
 }
 </script>
