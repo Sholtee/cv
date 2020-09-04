@@ -35,6 +35,8 @@ export default {
 @import "../styles/consts"
 
 tbody > tr
+    $cell-padding: .7rem
+
     line-height: 1.2
     height: 2.5rem
     font-weight: unset
@@ -66,8 +68,11 @@ tbody > tr
                 background: #b2b2b2
 
     > th, td
-        padding: .7rem
+        padding: $cell-padding
 
         &:first-of-type
             border-right: 1.7rem solid transparent
+
+    > td
+        padding-right: 0
 </style>
