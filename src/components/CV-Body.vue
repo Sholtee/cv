@@ -1,5 +1,5 @@
 <!--
-   CV-Heading.vue
+   CV-Body.vue
    Author: Denes Solti
 -->
 
@@ -20,7 +20,7 @@ tbody
 import cell from './CV-Cell.vue';
 
 export default {
-  name: 'CV-Heading',
+  name: 'CV-Body',
   components: {
     'CV-Cell': cell
   },
@@ -35,8 +35,6 @@ export default {
 @import "../styles/consts"
 
 tbody > tr
-    $cell-padding: .7rem
-
     line-height: 1.2
     height: 2.5rem
     font-weight: unset
@@ -68,7 +66,7 @@ tbody > tr
                 background: #b2b2b2
 
     > th, td
-        padding: $cell-padding
+        padding: .7rem
 
         &:first-of-type
             border-right: 1.7rem solid transparent
