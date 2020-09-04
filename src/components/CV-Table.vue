@@ -79,8 +79,6 @@ export default {
         span
             display: block
 
-
-
     @media (min-width: #{$table-width})
         img
             float: right

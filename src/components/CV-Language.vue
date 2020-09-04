@@ -34,7 +34,7 @@ export default {
 @import "../styles/consts"
 
 .language-selector
-    position: fixed
+    position: absolute
     display: flex
     padding: calc(#{$min-margin} / 2)
     z-index: 100
