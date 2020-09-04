@@ -59,7 +59,6 @@ tbody > tr
 
         > th
             font-weight: bold
-            padding-left: $min-margin
             text-align: left
 
             &:not(.empty)
@@ -68,7 +67,7 @@ tbody > tr
 
     > th, td
         padding: .7rem
-        
+
         &:first-of-type
             border-right: 1.7rem solid transparent
 </style>
