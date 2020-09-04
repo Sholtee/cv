@@ -67,6 +67,8 @@ tbody > tr
                 background: #b2b2b2
 
     > th, td
+        padding: .7rem
+        
         &:first-of-type
             border-right: 1.7rem solid transparent
 </style>
