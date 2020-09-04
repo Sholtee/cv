@@ -31,4 +31,4 @@
     ```
 6. Commit your changes
 7. Tag the commit with "deploy" (after successful publish you can remove the tag)
-8. After the CI succeeded your CV will be available at `YourName.github.io/cv` and looks like [this](sholtee.github.io/cv )
+8. After the CI succeeded your CV will be available at `YourName.github.io/cv` and looks like [this](https://sholtee.github.io/cv )
