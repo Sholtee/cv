@@ -13,8 +13,7 @@ tbody
     th.empty
   tr(v-for="(value, key) in content")
     td.key(v-html="key")
-    td.value
-      CV-Cell(:data="value")
+    CV-Cell.value(:value="value")
 </template>
 
 <script>
