@@ -28,7 +28,7 @@
     },
     "Developer knowledges": {
       "Code editors": "Visual Studio, RAD Studio, Lazarus, WebStorm, LinqPad, MySQL Workbench, pgAdmin",
-      "Frameworks": ".NET, NodeJS, AngularJS (nem Angular), Vue, PhoneGap",
+      "Frameworks": ".NET, NodeJS, AngularJS (not Angular), Vue, PhoneGap",
       "Frameworks (testing)": "NUnit, DUnit, Jasmine, Karma",
       "Automation ": "PowerShell, Grunt",
       "CI": "AppVeyor, Travis",
