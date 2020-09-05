@@ -53,7 +53,7 @@ tr
 
     &.group-header
         font-size: 1rem
-        border-bottom: 1px solid black
+        border-bottom: $header-bottom-border
 
         > th
             font-weight: bold

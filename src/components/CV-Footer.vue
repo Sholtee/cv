@@ -4,7 +4,7 @@
 -->
 
 <template lang="pug">
-tfoot(v-once)
+tfoot
     tr.header
         td(colspan="2") {{content.title | capitalize}}
     tr
@@ -32,10 +32,11 @@ td
     text-align: left
 
 .header
-    border-top: 3rem solid transparent
+    border-bottom: $header-bottom-border
 
     > td
         font-weight: bold
         text-align: center
         background: $header-bg
+        border-top: 3rem solid transparent
 </style>
