@@ -50,5 +50,9 @@
     "Egyéb": {
       "": "<b>Nyelvismeret:</b> angol (társalgás, dokumentáció írás), középfokú nyelvvizsga<br><br><b>Jogosítvány:</b> „B” kategóriás, saját kocsi"
     }
+  },
+  "footer": {
+    "title": "Footer",
+    "text": "cica"
   }
 }

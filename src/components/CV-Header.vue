@@ -4,7 +4,7 @@
 -->
 
 <template lang="pug">
-thead(v-once)
+thead
     tr
         td(colspan="2")
             img(:src="content.avatar")
@@ -13,9 +13,12 @@ thead(v-once)
 
 <script>
 export default {
-  name: 'CV-Header',
+  name: 'cv-header',
   props: {
-    content: Object
+    content: {
+      type: Object,
+      validator: val => ['title', 'subtitle', 'avatar'].every(prop => prop in val)
+    }
   }
 }
 </script>

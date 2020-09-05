@@ -7,22 +7,20 @@
 //-
   Vue template-nek csak egy gyoker eleme lehet ezert a <table> alatt tobb <tbody> elemunk lesz ami teljesen valid:
   https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody
-tbody(v-once)
-  tr.group-header
+tbody
+  tr.group-header(v-once)
     th {{title | capitalize}}
     th.empty
   tr(v-for="(value, key) in content")
     td.key(v-html="key")
-    CV-Cell.value(:value="value")
+    cv-cell.value(:value="value")
 </template>
 
 <script>
-import cell from './CV-Cell.vue';
-
 export default {
-  name: 'CV-Body',
+  name: 'cv-body',
   components: {
-    'CV-Cell': cell
+    'cv-cell': () => import('./CV-Cell.vue')
   },
   props: {
     content: Object,
@@ -34,7 +32,7 @@ export default {
 <style lang="sass" scoped>
 @import "../styles/consts"
 
-tbody > tr
+tr
     line-height: 1.2
     height: 2.5rem
     font-weight: unset
@@ -63,10 +61,10 @@ tbody > tr
 
             &:not(.empty)
                 width: 30%
-                background: #b2b2b2
+                background: $header-bg
 
     > th, td
-        padding: .7rem
+        padding: $cell-padding
 
         &:first-of-type
             border-right: 1.7rem solid transparent

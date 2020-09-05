@@ -9,8 +9,10 @@ td(:class="{placeholder: !content.visible}" v-on:click="content.visible = true" 
 
 <script>
 export default {
-  name: 'CV-Cell',
-  props: ['value'],
+  name: 'cv-cell',
+  props: {
+    value: [String, Object]
+  },
   data: function() {
     const {value} = this;
 

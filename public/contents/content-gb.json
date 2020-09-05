@@ -49,5 +49,9 @@
     "Other": {
       "": "<b>Language knowledge:</b> english (conversational level), „B” type language exam<br><br><b>Driver license:</b> „B” type, own car"
     }
+  },
+  "footer": {
+    "title": "Footer",
+    "text": "cica"
   }
 }

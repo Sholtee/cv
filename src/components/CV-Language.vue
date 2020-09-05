@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'CV-Language',
+  name: 'cv-language',
   props: {
     languages: Array
   },

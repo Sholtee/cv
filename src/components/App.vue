@@ -5,22 +5,20 @@
 
 <template lang="pug">
 #app
-    CV-Language(:languages="languages" v-on:language-selected="setContent($event)")
-    CV-Table(v-if="content" :content="content")
+    cv-language(:languages="languages" v-on:language-selected="setContent($event)")
+    cv-table(v-if="content" :content="content")
 </template>
 
 <script>
 import axios from 'axios';
 import contents from  '../assets/content.json';
-import table from './CV-Table.vue';
-import language from './CV-Language.vue';
 
 export default {
   name: 'CV',
   title: 'CV',
   components: {
-    'CV-Table': table,
-    'CV-Language': language
+    'cv-table':    () => import('./CV-Table.vue'),
+    'cv-language': () => import('./CV-Language.vue')
   },
   data: function() {
     return {

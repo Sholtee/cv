@@ -6,22 +6,24 @@
 <template lang="pug">
 .table-holder
     table
-        CV-Header(:content="content.header")
-        CV-Body(v-for="(body, title) in content.body" :key="title" :title="title" :content="body")
+        cv-header(:content="content.header")
+        cv-body(v-for="(body, title) in content.body" :key="title" :title="title" :content="body")
+        cv-footer(:content="content.footer")
 </template>
 
 <script>
-import header from './CV-Header.vue';
-import body from './CV-Body.vue';
-
 export default {
-  name: 'CV-Table',
+  name: 'cv-table',
   components: {
-    "CV-Header": header,
-    "CV-Body": body
+    'cv-header': () => import('./CV-Header.vue'),
+    'cv-body':   () => import('./CV-Body.vue'),
+    'cv-footer': () => import('./CV-Footer.vue')
   },
   props: {
-    content: Object
+    content: {
+      type: Object,
+      validator: val => ['header', 'body', 'footer'].every(prop => prop in val)
+    }
   }
 }
 </script>
