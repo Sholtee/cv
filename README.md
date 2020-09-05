@@ -11,10 +11,12 @@
 5. Create the `content-xx.json` files. The layout of them looks like:
     ```json
     {
-      "title": "...",
-      "subtitle": "...",
-      "avatar": "assets/avatar.jpg",
-      "headings": {
+      "header": {
+        "title": "...",
+        "subtitle": "...",
+        "avatar": "assets/avatar.jpg"
+      },
+      "body": {
         "heading_1": {
           "key_1": "value1",
           "key_2": "value2",

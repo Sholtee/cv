@@ -1,8 +1,10 @@
 {
-  "title": "Solti Dénes",
-  "subtitle": "Senior Szoftverfejlesztő",
-  "avatar": "assets/avatar.jpg",
-  "headings": {
+  "header": {
+    "title": "Solti Dénes",
+    "subtitle": "Senior Szoftverfejlesztő",
+    "avatar": "assets/avatar.jpg"
+  },
+  "body": {
     "Személyes adatok": {
       "Születési hely, idő": "Pécs, 1986. október 26.",
       "Lakcím": "Pécs",

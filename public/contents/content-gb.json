@@ -1,8 +1,10 @@
 {
-  "title": "Dénes Solti",
-  "subtitle": "Senior Software Developer",
-  "avatar": "assets/avatar.jpg",
-  "headings": {
+  "header": {
+    "title": "Dénes Solti",
+    "subtitle": "Senior Software Developer",
+    "avatar": "assets/avatar.jpg"
+  },
+  "body": {
     "Personal data": {
       "Place/date of birth": "Pécs, October 26. 1986",
       "Address": "Pécs",

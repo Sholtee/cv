@@ -6,8 +6,8 @@
 <template lang="pug">
 .table-holder
     table
-        CV-Header(:content="content")
-        CV-Body(v-for="(data, title) in content.headings" :key="title" :title="title" :content="data")
+        CV-Header(:content="content.header")
+        CV-Body(v-for="(body, title) in content.body" :key="title" :content="body")
 </template>
 
 <script>
