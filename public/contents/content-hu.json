@@ -32,7 +32,7 @@
       }
     },
     "Készségek (egyéb)": {
-      "Probláma megoldó": {
+      "Probléma megoldó": {
         "type": "indicator",
         "max": 5,
         "current": 5
