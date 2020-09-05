@@ -18,8 +18,8 @@
       },
       "body": {
         "heading_1": {
-          "key_1": "value1",
-          "key_2": "value2",
+          "key_1": "text",
+          "key_2": "<b>bold</b> text",
           "key_3": {
             "placeholder": "...",
             "text": "..."
@@ -28,6 +28,10 @@
         "heading_2": {
      
         }
+      },
+      "footer": {
+        "title": "...",
+        "text": "<i>italic</i> text"
       }
     }
     ```
