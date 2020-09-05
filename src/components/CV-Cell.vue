@@ -4,16 +4,23 @@
 -->
 
 <template lang="pug">
-td(:class="{placeholder: !content.visible}" v-on:click="content.visible = true" v-html="content.visible ? content.text : content.placeholder")
+td
+    cv-secret(v-if="content.type == 'secret'" :value="content")
+    cv-indicator(v-else-if="content.type == 'indicator'" :value="content")
+    span(v-else-if="content.type == 'text'" v-html="content.text")
 </template>
 
 <script>
 export default {
   name: 'cv-cell',
+  components: {
+    'cv-secret':    () => import('./CV-Secret.vue'),
+    'cv-indicator': () => import('./CV-Indicator.vue')
+  },
   props: {
     value: {
       type: [String, Object],
-      validator: value => value.constructor === String || ['placeholder', 'text'].every(prop => prop in value)
+      validator: val => val.constructor === String || ['type'].every(prop => prop in val)
     }
   },
   data: function() {
@@ -21,16 +28,9 @@ export default {
 
     return {
       content: value.constructor === String
-        ? {text: value, visible: true}
-        : {...value, visible: false}
+        ? {text: value, type: "text"}
+        : value
     };
   }
 }
 </script>
-
-<style lang="sass" scoped>
-.placeholder
-    cursor: pointer
-    color: rgb(0, 0, 238)
-    text-decoration: underline
-</style>

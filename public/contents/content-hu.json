@@ -9,12 +9,43 @@
       "Születési hely, idő": "Pécs, 1986. október 26.",
       "Lakcím": "Pécs",
       "Telefonszám": {
+        "type": "secret",
         "placeholder": "mutasd",
         "text": "+36-30/65-42-497"
       },
       "Email": {
+        "type": "secret",
         "placeholder": "mutasd",
         "text": "<a href='mailto:sodnaatx@gmail.com'>sodnaatx@gmail.com</a>"
+      }
+    },
+    "Készségek (fejlesztés)": {
+      "Back-End": {
+        "type": "indicator",
+        "max": 5,
+        "current": 5
+      },
+      "Front-End": {
+        "type": "indicator",
+        "max": 5,
+        "current": 4
+      }
+    },
+    "Készségek (egyéb)": {
+      "Probláma megoldó": {
+        "type": "indicator",
+        "max": 5,
+        "current": 5
+      },
+      "Kommunikáció": {
+        "type": "indicator",
+        "max": 5,
+        "current": 4
+      },
+      "Több feladat párhuzamos végzése": {
+        "type": "indicator",
+        "max": 5,
+        "current": 4
       }
     },
     "Tanulmányok": {

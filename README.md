@@ -21,9 +21,15 @@
           "key_1": "text",
           "key_2": "<b>bold</b> text",
           "key_3": {
+            "type": "secret",
             "placeholder": "...",
             "text": "..."
-          } 
+          },
+          "key_3": {
+            "type": "indicator",
+            "max": 5,
+            "current": 4
+          }
         },
         "heading_2": {
      
