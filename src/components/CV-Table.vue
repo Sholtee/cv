@@ -7,7 +7,7 @@
 .table-holder
     table
         CV-Header(:content="content.header")
-        CV-Body(v-for="(body, title) in content.body" :key="title" :content="body")
+        CV-Body(v-for="(body, title) in content.body" :key="title" :title="title" :content="body")
 </template>
 
 <script>
