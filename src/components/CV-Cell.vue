@@ -11,13 +11,16 @@ td(:class="{placeholder: !content.visible}" v-on:click="content.visible = true" 
 export default {
   name: 'cv-cell',
   props: {
-    value: [String, Object]
+    value: {
+      type: [String, Object],
+      validator: value => value.constructor === String || ['placeholder', 'text'].every(prop => prop in value)
+    }
   },
   data: function() {
     const {value} = this;
 
     return {
-      content: typeof value === 'string'
+      content: value.constructor === String
         ? {text: value, visible: true}
         : {...value, visible: false}
     };
