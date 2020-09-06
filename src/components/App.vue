@@ -5,7 +5,7 @@
 
 <template lang="pug">
 #app
-    cv-language(:languages="languages" v-on:language-selected="setContent($event)")
+    cv-language(:languages="languages" v-on:language-selected="setContent")
     cv-table(v-if="content" :content="content")
 </template>
 
@@ -28,8 +28,8 @@ export default {
   },
   methods: {
     async setContent(i) {
-      const content = await axios.get(contents[i]);
-      this.content = content.data;
+      const {data} = await axios.get(contents[i]);
+      this.content = data;
     }
   },
   computed: {
