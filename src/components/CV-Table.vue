@@ -22,7 +22,7 @@ export default {
   props: {
     content: {
       type: Object,
-      validator: val => ['header', 'body', 'footer'].every(prop => prop in val)
+      validator: val => ['header', 'body'/*, 'footer'*/].every(prop => prop in val)
     }
   }
 }
