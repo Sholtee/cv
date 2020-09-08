@@ -8,7 +8,7 @@
     table
         cv-header(:content="content.header")
         cv-body(v-for="(body, title) in content.body" :key="title" :title="title" :content="body")
-        cv-footer(:content="content.footer")
+        cv-footer(v-if="content.footer" :content="content.footer")
 </template>
 
 <script>
