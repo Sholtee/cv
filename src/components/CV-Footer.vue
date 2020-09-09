@@ -25,7 +25,6 @@ export default {
 
 <style lang="sass" scoped>
 @import "../styles/consts"
-@import "../styles/hacks"
 
 td
     padding: $cell-padding
@@ -33,10 +32,9 @@ td
     text-align: left
 
 .title
-    +enforce-border-bottom // border-bottom a border-collapse miatt nem latszik
-
     > td
         font-weight: bold
         text-align: center
         background: $header-bg
+        border-bottom: $header-bottom-border
 </style>

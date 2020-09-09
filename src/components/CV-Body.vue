@@ -8,10 +8,13 @@
   Vue template-nek csak egy gyoker eleme lehet ezert a <table> alatt tobb <tbody> elemunk lesz ami teljesen valid:
   https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody
 tbody
-  tr.group-header(v-once)
-    th {{title | capitalize}}
-    th.empty
-  tr(v-for="(value, key) in content")
+  tr.header(v-once)
+    td.title {{title | capitalize}}
+    td.empty
+  //- A fejlec "td"-k ala helyezett szegelyt kette osztana a valaszto
+  tr.separator
+    td(colspan="2")
+  tr.content(v-for="(value, key) in content")
     td.key(v-html="key")
     cv-cell.value(:value="value")
 </template>
@@ -31,51 +34,51 @@ export default {
 
 <style lang="sass" scoped>
 @import "../styles/consts"
-@import "../styles/hacks"
 
 tbody
     $cell-spacing: 1.7rem solid transparent
 
-    > tr
+    > .header, .content
         line-height: 1.2
         height: 2.5rem
         font-weight: unset
         color: $font-color-highlighted
 
-        &:not(.group-header)
-            will-change: background-color
-            transition: background-color $default-transition-len
-
-            &:hover
-                background-color: $row-bg
-
-            > .key
-                text-align: right
-
-            > .value
-                text-align: left
-
-        &.group-header
-            font-size: 1rem
-
-            +enforce-border-bottom // border-bottom a border-collapse miatt nem latszik
-
-            > th
-                font-weight: bold
-                text-align: left
-
-                &:not(.empty)
-                    width: 30%
-                    background: $header-bg
-
-        > th, td
+        > td
             padding: $cell-padding
 
             &:nth-of-type(2)
                 border-left: $cell-spacing
 
-        > td // "th"-nal legyen kitoltes h kis meretnel ne nezzen ki hulyen
+    > .content
+        will-change: background-color
+        transition: background-color $default-transition-len
+
+        > .key
+            text-align: right
             padding-right: 0
+
+        > .value
+            text-align: left
+            padding-left: 0
+
+        &:hover
+            background-color: $row-bg
+
+    > .header
+        > td
+            font-weight: bold
+            text-align: left
+
+            &.title
+                width: 30%
+                background: $header-bg
+
+    > .separator
+        > td
+            height: 0
+            padding: 0
+            border-bottom: $header-bottom-border
 
     &:last-of-type > tr:last-of-type > td
         border-bottom: $cell-spacing
