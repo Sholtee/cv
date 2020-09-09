@@ -11,9 +11,6 @@ tbody
   tr.header(v-once)
     td.title {{title | capitalize}}
     td.empty
-  //- A fejlec "td"-k ala helyezett szegelyt kette osztana a valaszto
-  tr.separator
-    td(colspan="2")
   tr.content(v-for="(value, key) in content")
     td.key(v-html="key")
     cv-cell.value(:value="value")
@@ -48,7 +45,17 @@ tbody
             padding: $cell-padding
 
             &:nth-of-type(2)
-                border-left: $cell-spacing
+                padding-left: 2rem
+
+    > .header
+        > td
+            font-weight: bold
+            text-align: left
+            border-bottom: $header-bottom-border
+
+            &.title
+                width: 30%
+                background: $header-bg
 
     > .content
         will-change: background-color
@@ -64,21 +71,6 @@ tbody
 
         &:hover
             background-color: $row-bg
-
-    > .header
-        > td
-            font-weight: bold
-            text-align: left
-
-            &.title
-                width: 30%
-                background: $header-bg
-
-    > .separator
-        > td
-            height: 0
-            padding: 0
-            border-bottom: $header-bottom-border
 
     &:last-of-type > tr:last-of-type > td
         border-bottom: $cell-spacing
