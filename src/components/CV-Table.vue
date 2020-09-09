@@ -39,7 +39,8 @@ export default {
     margin-bottom: 2rem
 
     > table
-        border-collapse: collapse
+        border-collapse: separate
+        border-spacing: 0 0
         background: white
         overflow: hidden
         width: 100%

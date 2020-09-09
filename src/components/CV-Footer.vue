@@ -33,13 +33,10 @@ td
     text-align: left
 
 .title
-    border-bottom: $header-bottom-border // ez Firefox alatt baszik rendesen megjelenni (elso oszlop utani atlatszo szegely miatt)
-
-    +firefox-border-fix
+    +enforce-border-bottom // border-bottom a border-collapse miatt nem latszik
 
     > td
         font-weight: bold
         text-align: center
         background: $header-bg
-        border-top: 3rem solid transparent
 </style>

@@ -33,45 +33,50 @@ export default {
 @import "../styles/consts"
 @import "../styles/hacks"
 
-tr
-    line-height: 1.2
-    height: 2.5rem
-    font-weight: unset
-    color: $font-color-highlighted
+tbody
+    $cell-spacing: 1.7rem solid transparent
 
-    &:not(.group-header)
-        will-change: background-color
-        transition: background-color $default-transition-len
+    > tr
+        line-height: 1.2
+        height: 2.5rem
+        font-weight: unset
+        color: $font-color-highlighted
 
-        &:hover
-            background-color: $row-bg
+        &:not(.group-header)
+            will-change: background-color
+            transition: background-color $default-transition-len
 
-        > .key
-            text-align: right
+            &:hover
+                background-color: $row-bg
 
-        > .value
-            text-align: left
+            > .key
+                text-align: right
 
-    &.group-header
-        font-size: 1rem
-        border-bottom: $header-bottom-border // ez Firefox alatt baszik rendesen megjelenni (elso oszlop utani atlatszo szegely miatt)
+            > .value
+                text-align: left
 
-        +firefox-border-fix
+        &.group-header
+            font-size: 1rem
 
-        > th
-            font-weight: bold
-            text-align: left
+            +enforce-border-bottom // border-bottom a border-collapse miatt nem latszik
 
-            &:not(.empty)
-                width: 30%
-                background: $header-bg
+            > th
+                font-weight: bold
+                text-align: left
 
-    > th, td
-        padding: $cell-padding
+                &:not(.empty)
+                    width: 30%
+                    background: $header-bg
 
-        &:first-of-type
-            border-right: 1.7rem solid transparent
+        > th, td
+            padding: $cell-padding
 
-    > td
-        padding-right: 0
+            &:nth-of-type(2)
+                border-left: $cell-spacing
+
+        > td // "th"-nal legyen kitoltes h kis meretnel ne nezzen ki hulyen
+            padding-right: 0
+
+    &:last-of-type > tr:last-of-type > td
+        border-bottom: $cell-spacing
 </style>
