@@ -5,7 +5,7 @@
 
 <template lang="pug">
 tfoot
-    tr.header
+    tr.title
         td(colspan="2") {{content.title | capitalize}}
     tr
         td(colspan="2" v-html="content.text")
@@ -25,14 +25,17 @@ export default {
 
 <style lang="sass" scoped>
 @import "../styles/consts"
+@import "../styles/hacks"
 
 td
     padding: $cell-padding
     color: $font-color-highlighted
     text-align: left
 
-.header
-    border-bottom: $header-bottom-border
+.title
+    border-bottom: $header-bottom-border // ez Firefox alatt baszik rendesen megjelenni (elso oszlop utani atlatszo szegely miatt)
+
+    +firefox-border-fix
 
     > td
         font-weight: bold

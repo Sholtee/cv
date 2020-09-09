@@ -1,0 +1,14 @@
+/*********************************************************************************
+ *  hacks.sass                                                                   *
+ *  Author: Denes Solti                                                          *
+ *********************************************************************************/
+@import "consts"
+
+=firefox-border-fix
+    &:after
+        content: ""
+        border-bottom: $header-bottom-border
+        position: absolute
+        bottom: 0
+        width: 100%
+        left: 0

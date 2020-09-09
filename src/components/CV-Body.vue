@@ -31,6 +31,7 @@ export default {
 
 <style lang="sass" scoped>
 @import "../styles/consts"
+@import "../styles/hacks"
 
 tr
     line-height: 1.2
@@ -53,7 +54,9 @@ tr
 
     &.group-header
         font-size: 1rem
-        border-bottom: $header-bottom-border
+        border-bottom: $header-bottom-border // ez Firefox alatt baszik rendesen megjelenni (elso oszlop utani atlatszo szegely miatt)
+
+        +firefox-border-fix
 
         > th
             font-weight: bold
