@@ -33,7 +33,7 @@ export default {
 @import "../styles/consts"
 
 tbody
-    $cell-spacing: 1.7rem solid transparent
+    $cell-spacing: 2rem
 
     > .header, .content
         line-height: 1.2
@@ -45,7 +45,7 @@ tbody
             padding: $cell-padding
 
             &:nth-of-type(2)
-                padding-left: 2rem
+                padding-left: $cell-spacing
 
     > .header
         > td
@@ -73,5 +73,5 @@ tbody
             background-color: $row-bg
 
     &:last-of-type > tr:last-of-type > td
-        border-bottom: $cell-spacing
+        padding-bottom: $cell-spacing
 </style>
