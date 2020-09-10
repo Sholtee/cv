@@ -23,7 +23,7 @@ export default {
       validator: val => val.constructor === String || ['type'].every(prop => prop in val)
     }
   },
-  data: function() {
+  data() {
     const {value} = this;
 
     return {

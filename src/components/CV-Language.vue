@@ -14,7 +14,7 @@ export default {
   props: {
     languages: Array
   },
-  data: function() {
+  data() {
     return {
       selected: false
     }

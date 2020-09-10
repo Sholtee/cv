@@ -16,7 +16,7 @@ export default {
       validator: val => ['placeholder', 'text'].every(prop => prop in val)
     }
   },
-  data: function() {
+  data() {
     return {
       content: {...this.value, visible: false}
     };

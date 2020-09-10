@@ -22,7 +22,7 @@ export default {
     'cv-table':    () => import('./CV-Table.vue'),
     'cv-language': () => import('./CV-Language.vue')
   },
-  data: function() {
+  data() {
     return {
       contentIndex: false,
       content: false
