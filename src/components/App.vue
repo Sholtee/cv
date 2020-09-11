@@ -8,6 +8,7 @@
     cv-content
         cv-language(:languages="languages" v-on:language-selected="setContent")
         cv-table(v-if="content" :content="content")
+    .build-date Last updated: #{new Date().toDateString()}
 </template>
 
 <script>
@@ -45,8 +46,15 @@ export default {
 <style src="../styles/main.sass" lang="sass"></style>
 
 <style lang="sass">
+@import "../styles/consts"
+
 #app
     width: 100%
     height: 100%
     font-family: Roboto, sans-serif
+
+    > .build-date
+        color: rgba(0, 0, 0, .3)
+        text-align: right
+        padding: $min-margin
 </style>
