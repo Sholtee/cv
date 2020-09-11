@@ -35,7 +35,7 @@ export default {
       if (!this.buildDate) return;
 
       moment.locale(this.locale);
-      return moment().format('YYYY MMMM Do');
+      return moment().format('ll');
     }
   }
 }
