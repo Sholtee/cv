@@ -12,6 +12,7 @@
 6. Create the `content-xx.json` files. The layout of them looks like:
     ```json
     {
+      "locale": "en",
       "header": {
         "title": "...",
         "subtitle": "...",

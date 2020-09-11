@@ -8,7 +8,7 @@
     cv-content
         cv-language(:languages="languages" v-on:language-selected="setContent")
         cv-table(v-if="content" :content="content")
-    .build-date Last updated: #{new Date().toDateString()}
+        cv-build-date(v-if="content" :locale="content.locale")
 </template>
 
 <script>
@@ -19,9 +19,10 @@ export default {
   name: 'CV',
   title: 'CV',
   components: {
-    'cv-content':  () => import('./CV-Content.vue'),
-    'cv-table':    () => import('./CV-Table.vue'),
-    'cv-language': () => import('./CV-Language.vue')
+    'cv-content':    () => import('./CV-Content.vue'),
+    'cv-table':      () => import('./CV-Table.vue'),
+    'cv-language':   () => import('./CV-Language.vue'),
+    'cv-build-date': () => import('./CV-BuildDate.vue')
   },
   data() {
     return {
@@ -46,15 +47,8 @@ export default {
 <style src="../styles/main.sass" lang="sass"></style>
 
 <style lang="sass">
-@import "../styles/consts"
-
 #app
     width: 100%
     height: 100%
     font-family: Roboto, sans-serif
-
-    > .build-date
-        color: rgba(0, 0, 0, .3)
-        text-align: right
-        padding: $min-margin
 </style>

@@ -11,7 +11,8 @@
     "vue": "^2.6.12",
     "axios": "^0.20.0",
     "roboto-fontface": "^0.10.0",
-    "flag-icon-css": "^3.5.0"
+    "flag-icon-css": "^3.5.0",
+    "moment": "^2.27.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",
