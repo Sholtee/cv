@@ -32,10 +32,12 @@ export default {
     //
 
     dateFmt() {
-      if (!this.buildDate) return;
+      const {locale, buildDate} = this;
 
-      moment.locale(this.locale);
-      return moment().format('ll');
+      if (!buildDate) return;
+
+      moment.locale(locale);
+      return moment(buildDate).format('ll');
     }
   }
 }
