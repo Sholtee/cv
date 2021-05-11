@@ -1,0 +1,89 @@
+{
+  "locale": "en",
+  "header": {
+    "title": "Dénes Solti",
+    "subtitle": "Senior Software Developer",
+    "avatar": "assets/avatar.jpg"
+  },
+  "body": {
+    "Personal data": {
+      "Place/date of birth": "Pécs, October 26. 1986",
+      "Address": "Pécs",
+      "Phone number": {
+        "type": "secret",
+        "placeholder": "show",
+        "text": "+36-30/65-42-497"
+      },
+      "Email": {
+        "type": "secret",
+        "placeholder": "show",
+        "text": "<a href='mailto:sodnaatx@gmail.com'>sodnaatx@gmail.com</a>"
+      }
+    },
+    "Skills (development)": {
+      "Back-End": {
+        "type": "indicator",
+        "max": 5,
+        "current": 5
+      },
+      "Front-End": {
+        "type": "indicator",
+        "max": 5,
+        "current": 4
+      }
+    },
+    "Skills (other)": {
+      "Problem solving": {
+        "type": "indicator",
+        "max": 5,
+        "current": 5
+      },
+      "Communication": {
+        "type": "indicator",
+        "max": 5,
+        "current": 4
+      },
+      "Multitasking": {
+        "type": "indicator",
+        "max": 5,
+        "current": 4
+      }
+    },
+    "Studies": {
+      "<i>2005 – 2010</i>": "<b>University of Pécs</b>",
+      "Faculty": "TTK",
+      "Department": "Programmer",
+      "Final exam": "Rating: 4",
+      "Thesis": "<i>Resource monitoring with Yahoo widgets</i>, rating: 5",
+      "<i>2005</i>": "<i>Software operator</i> (OKJ), <i>ECDL</i> (5 modules)",
+      "<i>2001 – 2005</i>": "<b>Széchenyi István High School</b>, advanced level IT, Pécs"
+    },
+    "Developer knowledges": {
+      "Code editors": "Visual Studio, RAD Studio, Lazarus, WebStorm, LinqPad, MySQL Workbench, pgAdmin",
+      "Frameworks": ".NET, NodeJS, AngularJS (not Angular), Vue, PhoneGap",
+      "Frameworks (testing)": "NUnit, DUnit, Jasmine, Karma",
+      "Automation ": "PowerShell, Grunt",
+      "CI": "AppVeyor, Travis",
+      "Programming languages": "C#, Delphi/Free Pascal, JS",
+      "Query languages": "SQL (MySQL, PostgreSQL)",
+      "Template languages": "PUG-HAML-HTML, SASS-SCSS-CSS",
+      "Version control": "Git",
+      "GitHub": "<a href='https://github.com/sholtee'>github.com/sholtee</a>",
+      "Methodologies": "Scrum, XP, TDD, <strike>PDD (Panic Driven Development)</strike>",
+      "Package managers": "NuGet, NPM"
+    },
+    "Employment history": {
+      "<i>2010</i>": "<b>Court of Baranya county</b>, Pécs – IT operator",
+      "<i>2011-2013</i>": "Freelancer (operator, back-end development)",
+      "<i>2013-2016</i>": "Gépikód Magyarország Zrt, BP - Developer (back-end, front-end)",
+      "<i>2016-currently</i>": "<b>Education Authority</b>, <strike>BP,</strike> Pécs H.O. - Developer (back-end, front-end), <i>Senior</i> since 2019"
+    },
+    "Other": {
+      "": "<b>Language knowledge:</b> english (conversational level), „B” type language exam<br><br><b>Driver license:</b> „B” type, own car"
+    }
+  },
+  "footer": {
+    "title": "Cover letter",
+    "text": "cica"
+  }
+}
