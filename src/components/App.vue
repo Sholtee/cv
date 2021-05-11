@@ -5,10 +5,10 @@
 
 <template lang="pug">
 #app
-    cv-content
-        cv-language(:languages="languages" v-on:language-selected="setContent")
-        cv-table(v-if="content" :content="content")
-        cv-build-date(v-if="content" :locale="content.locale")
+  cv-content
+    cv-language(:languages="languages" v-on:language-selected="setContent")
+    cv-table(v-if="content" :content="content")
+    cv-build-date(v-if="content" :locale="content.locale")
 </template>
 
 <script>
@@ -17,7 +17,6 @@ import contents from  '../assets/content.json';
 
 export default {
   name: 'CV',
-  title: 'CV',
   components: {
     'cv-content':    () => import('./CV-Content.vue'),
     'cv-table':      () => import('./CV-Table.vue'),

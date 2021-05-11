@@ -12,6 +12,11 @@ module.exports = {
         {
           test: /\.pug$/,
           loader: 'pug-plain-loader',
+          options: {
+            data: {
+              package: require('./package.json')
+            }
+          }
         },
         {
           test: /\.scss$/,
@@ -28,6 +33,7 @@ module.exports = {
   pages: {
     index: {
       entry: 'src/scripts/main.js',
+      template: 'src/index.pug'
     }
   }
 };
