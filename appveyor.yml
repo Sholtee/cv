@@ -12,6 +12,8 @@ image: Visual Studio 2019
 environment:
   GITHUB_REPO_TOKEN:
     secure: qJEufJv866eebR/Boe1UnV3p1arOIX9BTyqAQnAVY49h4Ks40Sr0rHb3iN70e7BZ
+  GITHUB_EMAIL:
+    secure: Z6F+xZzdZzc5DMYB/4J0KUhyoTzTlXH75ciGl7hFH9s=
 
 branches:
   # blacklist
@@ -24,8 +26,29 @@ clone_script:
   - cmd: |
       git clone -q --recursive --branch=%APPVEYOR_REPO_BRANCH% https://github.com/%APPVEYOR_REPO_NAME%.git %APPVEYOR_BUILD_FOLDER%
       git checkout -qf %APPVEYOR_REPO_COMMIT%
-      
+
+install:
+  - cmd: npm install
+
 build_script:
-  - cmd: |
-      npm install
-      npm run build
+  - cmd: npm run build
+
+for:
+  -
+    branches:
+      only:
+        - master
+
+    before_deploy:
+      - ps: |
+          git config --global credential.helper store
+          Add-Content (Join-Path $Env:USERPROFILE ".git-credentials") "https://$($Env:GITHUB_REPO_TOKEN):x-oauth-basic@github.com/sholtee/cv.git"
+          git config --global user.email $Env:GITHUB_EMAIL
+          git config --global user.name [Bot]
+
+    deploy_script:
+      - ps: |
+          Move-Item .\dist -Destination $Env:TEMP
+          git checkout gh-pages
+          Get-ChildItem * -Exclude .git | Remove-Item
+          Move-Item $Env:TEMP\dist\* -Destination .
