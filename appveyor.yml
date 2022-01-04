@@ -1,0 +1,29 @@
+#############################################################################
+#                                                                           #
+# appveyor.yml                                                              #
+#                                                                           #
+# Author: Denes Solti                                                       #
+#                                                                           #
+#############################################################################
+
+# common configuration for ALL branches
+image: Visual Studio 2019
+
+environment:
+  GITHUB_REPO_TOKEN:
+    secure: qJEufJv866eebR/Boe1UnV3p1arOIX9BTyqAQnAVY49h4Ks40Sr0rHb3iN70e7BZ
+
+branches:
+  # blacklist
+  except:
+    - gh-pages
+
+build: off
+
+clone_script:
+  - cmd: |
+      git clone -q --recursive --branch=%APPVEYOR_REPO_BRANCH% https://github.com/%APPVEYOR_REPO_NAME%.git %APPVEYOR_BUILD_FOLDER%
+      git checkout -qf %APPVEYOR_REPO_COMMIT%
+      
+build_script:
+  - cmd: npm run build
