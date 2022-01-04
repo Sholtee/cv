@@ -64,6 +64,7 @@
       "Keretrendszer": ".NET, NodeJS, AngularJS (nem Angular), Vue, PhoneGap",
       "Keretrendszer (teszt)": "NUnit, DUnit, Jasmine, Karma",
       "Feladat automatizáció": "PowerShell, Grunt",
+      "Konténerizáció": "Docker",
       "CI": "AppVeyor, Travis",
       "Programozási nyelvek": "C#, Delphi/Free Pascal, JS",
       "Lekérdező nyelvek": "SQL (MySQL, PostgreSQL)",
@@ -85,6 +86,6 @@
   },
   "footer": {
     "title": "Kísérő levél",
-    "text": "cica"
+    "text": ""
   }
 }
