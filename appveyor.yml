@@ -26,4 +26,6 @@ clone_script:
       git checkout -qf %APPVEYOR_REPO_COMMIT%
       
 build_script:
-  - cmd: npm run build
+  - cmd: |
+      npm install
+      npm run build
