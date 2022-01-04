@@ -63,6 +63,7 @@
       "Frameworks": ".NET, NodeJS, AngularJS (not Angular), Vue, PhoneGap",
       "Frameworks (testing)": "NUnit, DUnit, Jasmine, Karma",
       "Automation ": "PowerShell, Grunt",
+      "Containerization": "Docker",
       "CI": "AppVeyor, Travis",
       "Programming languages": "C#, Delphi/Free Pascal, JS",
       "Query languages": "SQL (MySQL, PostgreSQL)",
@@ -84,6 +85,6 @@
   },
   "footer": {
     "title": "Cover letter",
-    "text": "cica"
+    "text": ""
   }
 }
