@@ -49,6 +49,7 @@ for:
     deploy_script:
       - ps: |
           Move-Item .\dist -Destination $Env:TEMP
+          git reset --hard
           git checkout gh-pages
           Get-ChildItem * -Exclude .git | Remove-Item
           Move-Item $Env:TEMP\dist\* -Destination .
