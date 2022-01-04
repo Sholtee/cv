@@ -27,6 +27,9 @@ clone_script:
       git clone -q --recursive --branch=%APPVEYOR_REPO_BRANCH% https://github.com/%APPVEYOR_REPO_NAME%.git %APPVEYOR_BUILD_FOLDER%
       git checkout -qf %APPVEYOR_REPO_COMMIT%
 
+init:
+  - ps: $ErrorActionPreference = "Stop"
+
 install:
   - cmd: npm install
 
@@ -49,7 +52,6 @@ for:
     deploy_script:
       - ps: |
           Move-Item .\dist -Destination $Env:TEMP
-          git reset --hard
-          git checkout gh-pages
-          Get-ChildItem * -Exclude .git | Remove-Item
+          git switch gh-pages
+          Get-ChildItem -Path . -Exclude .git | Remove-Item -Recurse -Force
           Move-Item $Env:TEMP\dist\* -Destination .
