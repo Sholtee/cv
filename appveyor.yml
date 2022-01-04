@@ -60,10 +60,10 @@ for:
     deploy_script:
       - ps: |
           Move-Item .\dist -Destination $Env:TEMP
-          git reset --hard
-          git switch gh-pages
+          git reset --hard | Out-Null
+          git switch gh-pages | Out-Null
           Get-ChildItem -Path . -Exclude .git | Remove-Item -Recurse -Force
           Move-Item $Env:TEMP\dist\* -Destination .
           git add --all
           git commit -m "deploy"
-          git push origin gh-pages
+#         git push origin gh-pages
