@@ -32,7 +32,7 @@ clone_script:
 init:
   - ps: |
       $ErrorActionPreference = "Stop"
-      IEX ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+#     IEX ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 
 install:
   - cmd: npm install
@@ -42,7 +42,7 @@ build_script:
 
 on_finish:
   - ps: |
-      $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+#     $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 
 for:
   -
@@ -52,10 +52,10 @@ for:
 
     before_deploy:
       - ps: |
-          git config --global credential.helper store
-          Add-Content (Join-Path $Env:USERPROFILE ".git-credentials") "https://$($Env:GITHUB_REPO_TOKEN):x-oauth-basic@github.com/sholtee/cv.git"
-          git config --global user.email $Env:GITHUB_EMAIL
-          git config --global user.name [Bot]
+          Start-Process git -ArgumentList "config --global credential.helper store" -NoNewWindow -Wait
+          Add-Content (Join-Path $Env:USERPROFILE ".git-credentials") "https://$Env:GITHUB_REPO_TOKEN:x-oauth-basic@github.com/sholtee/cv.git"
+          Start-Process git -ArgumentList "--global user.email $Env:GITHUB_EMAIL" -NoNewWindow -Wait
+          Start-Process git -ArgumentList "config --global user.name [Bot]" -NoNewWindow -Wait
 
     deploy_script:
       - ps: |
@@ -65,5 +65,5 @@ for:
           Get-ChildItem -Path . -Exclude .git | Remove-Item -Recurse -Force
           Move-Item $Env:TEMP\dist\* -Destination .
           Start-Process git -ArgumentList "add --all" -NoNewWindow -Wait
-          Start-Process git -ArgumentList 'commit -m "deploy"' -NoNewWindow -Wait
-#         git push origin gh-pages
+          Start-Process git -ArgumentList 'commit -m deploy' -NoNewWindow -Wait
+          Start-Process git -ArgumentList "push origin gh-pages" -NoNewWindow -Wait
