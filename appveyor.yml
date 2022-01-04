@@ -14,6 +14,8 @@ environment:
     secure: qJEufJv866eebR/Boe1UnV3p1arOIX9BTyqAQnAVY49h4Ks40Sr0rHb3iN70e7BZ
   GITHUB_EMAIL:
     secure: Z6F+xZzdZzc5DMYB/4J0KUhyoTzTlXH75ciGl7hFH9s=
+  APPVEYOR_RDP_PASSWORD:
+    secure: IvxSZoWD+DpqNjUP7mFjPA==
 
 branches:
   # blacklist
@@ -28,13 +30,19 @@ clone_script:
       git checkout -qf %APPVEYOR_REPO_COMMIT%
 
 init:
-  - ps: $ErrorActionPreference = "Stop"
+  - ps: |
+      $ErrorActionPreference = "Stop"
+      IEX ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 
 install:
   - cmd: npm install
 
 build_script:
   - cmd: npm run build
+
+on_finish:
+  - ps: |
+      $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 
 for:
   -
