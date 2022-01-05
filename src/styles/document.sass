@@ -20,7 +20,12 @@ html
 
     *
       position: relative
-      
+
+@media print
+  body
+    position: static !important
+    -webkit-print-color-adjust: exact
+
 @page
   size: auto
   margin: 0
