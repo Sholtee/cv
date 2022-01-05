@@ -1,4 +1,4 @@
-# CV [![Build Status](https://travis-ci.org/Sholtee/cv.svg?branch=master)](https://travis-ci.org/Sholtee/cv)
+# CV [![Build status](https://ci.appveyor.com/api/projects/status/f6ql44aafkfv3rh8/branch/master?svg=true)](https://ci.appveyor.com/project/Sholtee/cv/branch/master)
 
 ## How to use
 1. Fork [this](https://github.com/sholtee/cv.git ) repo
