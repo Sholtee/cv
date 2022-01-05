@@ -4,7 +4,7 @@
 1. Fork [this](https://github.com/sholtee/cv.git ) repo
 2. Create an [access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token ) for the forked repo
 3. Enable [GitHub pages](https://guides.github.com/features/pages/ ) using [gh-pages](https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site ) branch
-4. Set up your [CI](https://www.appveyor.com  ) and [define](https://www.appveyor.com/docs/how-to/secure-files/#decrypting-files-during-an-appveyor-build ) a [secure](https://ci.appveyor.com/tools/encrypt ) variable (named `GITHUB_TOKEN`) for the previously created token 
+4. Set up your [CI](https://www.appveyor.com  ) and [define](https://www.appveyor.com/docs/how-to/secure-files/#decrypting-files-during-an-appveyor-build ) a [secure](https://ci.appveyor.com/tools/encrypt ) variable (named `GITHUB_REPO_TOKEN`) for the previously created token 
 5. Customize the `src/assets/content.json` file:
     - Every property defines a version of your CV in a specific language
     - Keys are [alpha-2 codes](https://www.iso.org/obp/ui/#search ) that specify the language
