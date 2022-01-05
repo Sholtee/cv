@@ -48,22 +48,22 @@ for:
   -
     branches:
       only:
-        - deploy
-
-    before_deploy:
-      - ps: |
-          Start-Process git -ArgumentList "config --global credential.helper store" -NoNewWindow -Wait
-          Add-Content (Join-Path $Env:USERPROFILE ".git-credentials") "https://$($Env:GITHUB_REPO_TOKEN):x-oauth-basic@github.com/sholtee/cv.git"
-          Start-Process git -ArgumentList "config --global user.email $($Env:GITHUB_EMAIL)" -NoNewWindow -Wait
-          Start-Process git -ArgumentList "config --global user.name [Bot]" -NoNewWindow -Wait
+        - master
 
     deploy_script:
       - ps: |
-          Move-Item .\dist -Destination $Env:TEMP
-          Start-Process git -ArgumentList "reset --hard" -NoNewWindow -Wait
-          Start-Process git -ArgumentList "switch gh-pages" -NoNewWindow -Wait
-          Get-ChildItem -Path . -Exclude .git | Remove-Item -Recurse -Force
-          Move-Item $Env:TEMP\dist\* -Destination .
-          Start-Process git -ArgumentList "add --all" -NoNewWindow -Wait
-          Start-Process git -ArgumentList "commit -m deploy" -NoNewWindow -Wait
-          Start-Process git -ArgumentList "push origin gh-pages" -NoNewWindow -Wait
+          if ($Env:APPVEYOR_REPO_TAG_NAME -eq "deploy") {
+            Start-Process git -ArgumentList "config --global credential.helper store" -NoNewWindow -Wait
+            Add-Content (Join-Path $Env:USERPROFILE ".git-credentials") "https://$($Env:GITHUB_REPO_TOKEN):x-oauth-basic@github.com/sholtee/cv.git"
+            Start-Process git -ArgumentList "config --global user.email $($Env:GITHUB_EMAIL)" -NoNewWindow -Wait
+            Start-Process git -ArgumentList "config --global user.name [Bot]" -NoNewWindow -Wait
+
+            Move-Item .\dist -Destination $Env:TEMP
+            Start-Process git -ArgumentList "reset --hard" -NoNewWindow -Wait
+            Start-Process git -ArgumentList "switch gh-pages" -NoNewWindow -Wait
+            Get-ChildItem -Path . -Exclude .git | Remove-Item -Recurse -Force
+            Move-Item $Env:TEMP\dist\* -Destination .
+            Start-Process git -ArgumentList "add --all" -NoNewWindow -Wait
+            Start-Process git -ArgumentList "commit -m deploy" -NoNewWindow -Wait
+            Start-Process git -ArgumentList "push origin gh-pages" -NoNewWindow -Wait
+          }
