@@ -26,6 +26,10 @@ export default {
 <style lang="sass" scoped>
 @import "../styles/consts"
 
+@media print
+    tfoot
+        display: table-row-group
+
 td
     padding: $cell-padding
     color: $font-color-highlighted
