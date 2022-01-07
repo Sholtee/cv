@@ -25,8 +25,10 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+@import "../styles/consts"
+
 .placeholder
     cursor: pointer
-    color: rgb(0, 0, 238)
+    color: $blue
     text-decoration: underline
 </style>
