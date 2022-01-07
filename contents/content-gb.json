@@ -79,6 +79,13 @@
       "<i>2013-2016</i>": "Gépikód Magyarország Zrt, BP - Developer (back-end, front-end)",
       "<i>2016-currently</i>": "<b>Education Authority</b>, <strike>BP,</strike> Pécs H.O. - Developer (back-end, front-end), <i>Senior</i> since 2019"
     },
+    "Notable projects": {
+      "Országos Kompetencia Mérés (OKM)": "back-end, front-end developer",
+      "Pedagógus Életpálya Modell (PEM) messenger": "back-end developer",
+      "Közösségi Szociális Szolgálat (KÖSSZ) app": "back-end developer",
+      "Érettségi Feladatlapok Adminisztrációs és Kereső rendszere": "back-end, front-end, <b>lead</b> developer",
+      "Forex Raktár (warehouse management app)": "back-end, <b>lead</b> developer"
+    },
     "Other": {
       "": "<b>Language knowledge:</b> english (conversational level), „B” type language exam<br><br><b>Driver license:</b> „B” type, own car"
     }

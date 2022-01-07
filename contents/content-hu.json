@@ -80,6 +80,13 @@
       "<i>2013-2016</i>": "Gépikód Magyarország Zrt, BP - Fejlesztő (back-end, front-end)",
       "<i>2016-jelenleg is</i>": "<b>Oktatási Hivatal</b>, <strike>BP,</strike> Pécs H.O. - Fejlesztő (back-end, front-end), 2019 óta <i>Senior</i>"
     },
+    "Jelentősebb projektek": {
+      "Országos Kompetencia Mérés (OKM)": "back-end, front-end fejlesztő",
+      "Pedagógus Életpálya Modell (PEM) üzenetküldő": "back-end fejlesztő",
+      "Közösségi Szociális Szolgálat (KÖSSZ) alkalmazás": "back-end fejlesztő",
+      "Érettségi Feladatlapok Adminisztrációs és Kereső rendszere": "back-end, front-end, <b>vezető</b> fejlesztő",
+      "Forex Raktár (raktárkezelő alkalmazás)": "back-end, <b>vezető</b> fejlesztő"
+    },
     "Egyéb": {
       "": "<b>Nyelvismeret:</b> angol (társalgás, dokumentáció írás), középfokú nyelvvizsga<br><br><b>Jogosítvány:</b> „B” kategóriás, saját kocsi"
     }
