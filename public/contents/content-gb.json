@@ -58,26 +58,28 @@
       "<i>2005</i>": "<i>Software operator</i> (OKJ), <i>ECDL</i> (5 modules)",
       "<i>2001 – 2005</i>": "<b>Széchenyi István High School</b>, advanced level IT, Pécs"
     },
-    "Developer knowledges": {
+    "Developer knowledge": {
       "Code editors": "Visual Studio, RAD Studio, Lazarus, WebStorm, LinqPad, MySQL Workbench, pgAdmin",
-      "Frameworks": ".NET, NodeJS, AngularJS (not Angular), Vue, PhoneGap",
-      "Frameworks (testing)": "NUnit, DUnit, Jasmine, Karma",
+      "Frameworks": ".NET, NodeJS, AngularJS (not Angular), Vue, PhoneGap, Flask",
+      "Frameworks (testing)": "NUnit, DUnit, Jasmine, Karma, pytest",
       "Automation ": "PowerShell, Grunt",
       "Containerization": "Docker",
-      "CI": "AppVeyor, Travis",
-      "Programming languages": "C#, Delphi/Free Pascal, JS",
+      "Cloud": "AWS",
+      "CI/CD": "AppVeyor, Travis",
+      "Programming languages": "C#, Delphi/Free Pascal, JS, Python",
       "Query languages": "SQL (MySQL, PostgreSQL)",
       "Template languages": "PUG-HAML-HTML, SASS-SCSS-CSS",
       "Version control": "Git",
       "GitHub": "<a href='https://github.com/sholtee'>github.com/sholtee</a>",
       "Methodologies": "Scrum, XP, TDD, <strike>PDD (Panic Driven Development)</strike>",
-      "Package managers": "NuGet, NPM"
+      "Package managers": "NuGet, NPM, Pip"
     },
     "Employment history": {
       "<i>2010</i>": "<b>Court of Baranya county</b>, Pécs – IT operator",
       "<i>2011-2013</i>": "Freelancer (operator, back-end development)",
       "<i>2013-2016</i>": "Gépikód Magyarország Zrt, BP - Developer (back-end, front-end)",
-      "<i>2016-currently</i>": "<b>Education Authority</b>, <strike>BP,</strike> Pécs H.O. - Developer (back-end, front-end), <i>Senior</i> since 2019"
+      "<i>2016-2022</i>": "<b>Education Authority</b>, <strike>BP,</strike> Pécs H.O. - Developer (back-end, front-end), <i>Senior</i> since 2019",
+      "<i>2022-currently</i>": "<b>Sophos</b>, <i>Senior</i> full-stack developer"
     },
     "Notable projects": {
       "Országos Kompetencia Mérés (OKM)": "back-end, front-end developer",

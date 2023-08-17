@@ -61,24 +61,26 @@
     },
     "Fejlesztői ismeretek": {
       "Kódszerkesztő": "Visual Studio, RAD Studio, Lazarus, WebStorm, LinqPad, MySQL Workbench, pgAdmin",
-      "Keretrendszer": ".NET, NodeJS, AngularJS (nem Angular), Vue, PhoneGap",
-      "Keretrendszer (teszt)": "NUnit, DUnit, Jasmine, Karma",
+      "Keretrendszer": ".NET, NodeJS, AngularJS (nem Angular), Vue, PhoneGap, Flask",
+      "Keretrendszer (teszt)": "NUnit, DUnit, Jasmine, Karma, pytest",
       "Feladat automatizáció": "PowerShell, Grunt",
       "Konténerizáció": "Docker",
-      "CI": "AppVeyor, Travis",
-      "Programozási nyelvek": "C#, Delphi/Free Pascal, JS",
+      "Felhő": "AWS",
+      "CI/CD": "AppVeyor, Travis",
+      "Programozási nyelvek": "C#, Delphi/Free Pascal, JS, Python",
       "Lekérdező nyelvek": "SQL (MySQL, PostgreSQL)",
       "Leíró nyelvek": "PUG-HAML-HTML, SASS-SCSS-CSS",
       "Verzió kezelés": "Git",
       "GitHub": "<a href='https://github.com/sholtee'>github.com/sholtee</a>",
       "Módszertanok": "Scrum, XP, TDD, <strike>PDD (Panic Driven Development)</strike>",
-      "Csomagkezelők": "NuGet, NPM"
+      "Csomagkezelők": "NuGet, NPM, Pip"
     },
     "Szakmai tapasztalat": {
       "<i>2010</i>": "<b>Baranya Megyei Főügyészség</b>, Pécs – IT alkalmazás üzemeltetés",
       "<i>2011-2013</i>": "Szabadúszó (üzemeltetés, back-end fejlesztés)",
       "<i>2013-2016</i>": "Gépikód Magyarország Zrt, BP - Fejlesztő (back-end, front-end)",
-      "<i>2016-jelenleg is</i>": "<b>Oktatási Hivatal</b>, <strike>BP,</strike> Pécs H.O. - Fejlesztő (back-end, front-end), 2019 óta <i>Senior</i>"
+      "<i>2016-2022": "<b>Oktatási Hivatal</b>, <strike>BP,</strike> Pécs H.O. - Fejlesztő (back-end, front-end), 2019 óta <i>Senior</i>",
+      "<i>2022-jelenleg is</i>": "<b>Sophos</b>, <i>Senior</i> full-stack fejlesztő"
     },
     "Jelentősebb projektek": {
       "Országos Kompetencia Mérés (OKM)": "back-end, front-end fejlesztő",
