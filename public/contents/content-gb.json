@@ -30,6 +30,11 @@
         "type": "indicator",
         "max": 5,
         "current": 4
+      },
+      "Cloud (AWS)": {
+        "type": "indicator",
+        "max": 5,
+        "current": 3.5
       }
     },
     "Skills (other)": {
@@ -86,7 +91,12 @@
       "Pedagógus Életpálya Modell (PEM) messenger": "back-end developer",
       "Közösségi Szociális Szolgálat (KÖSSZ) app": "back-end developer",
       "Érettségi Feladatlapok Adminisztrációs és Kereső rendszere": "back-end, front-end, <b>lead</b> developer",
-      "Forex Raktár (warehouse management app)": "front-end, <b>lead</b> developer"
+      "Forex Raktár (warehouse management app)": "front-end, <b>lead</b> developer",
+      "<a href=\"https://intelix.sophos.com\" target=\"_blank\">Sophos Intelix UI</a>": "back-end, front-end fejlesztő"
+    },
+    "References": {
+      "<a href=\"https://sholtee.github.io/shop\" target=\"_blank\">Pet food WebShop</a>": "front-end POC",
+      "<a href=\"https://sholtee.github.io/katlan-kt\" target=\"_blank\">Katlan kaputechnika</a>": "front-end, <b>without JS framework</b>"
     },
     "Other": {
       "": "<b>Language knowledge:</b> english (conversational level), „B” type language exam<br><br><b>Driver license:</b> „B” type, own car"
