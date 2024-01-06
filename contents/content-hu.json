@@ -70,7 +70,7 @@
       "Keretrendszer (teszt)": "NUnit, DUnit, Jasmine, Karma, pytest",
       "Feladat automatizáció": "PowerShell, Grunt",
       "Konténerizáció": "Docker",
-      "Felhő": "AWS",
+      "Felhő": "AWS (leginkább használt szolgáltatások: Lambda, ECS, S3, Aurora, CloudFront, Cloudformation)",
       "CI/CD": "AppVeyor, Travis",
       "Programozási nyelvek": "C#, Delphi/Free Pascal, JS, Python",
       "Lekérdező nyelvek": "SQL (MySQL, PostgreSQL)",
