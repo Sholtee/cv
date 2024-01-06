@@ -95,9 +95,14 @@
       "Forex Raktár (raktárkezelő alkalmazás)": "front-end, <b>vezető</b> fejlesztő",
       "<a href=\"https://intelix.sophos.com\" target=\"_blank\">Sophos Intelix UI</a>": "back-end, front-end fejlesztő"
     },
-    "Referenciák": {
-      "<a href=\"https://sholtee.github.io/shop\" target=\"_blank\">Állateleség WebShop</a>": "front-end POC",
-      "<a href=\"https://sholtee.github.io/katlan-kt\" target=\"_blank\">Katlan kaputechnika</a>": "front-end, <b>JS framework nélkül</b>"
+    "Referenciák (front-end)": {
+      "<a href=\"https://sholtee.github.io/shop\" target=\"_blank\">Állateleség WebShop</a>": "POC projekt",
+      "<a href=\"https://sholtee.github.io/katlan-kt\" target=\"_blank\">Katlan kaputechnika</a>": "statikus app, <b>JS framework nélkül</b>",
+      "<a href=\"https://sholtee.github.io/cv\" target=\"_blank\">CV</a>": "Önéletrajt"
+    },
+    "Referenciák (back-end)": {
+      "<a href=\"https://www.nuget.org/packages/proxygen.net#readme-body-tab\" target=\"_blank\">ProxyGen.NET</a>": ".NET proxy generátor (Roslyn alapokon)",
+      "<a href=\"https://www.nuget.org/packages/injector.net#readme-body-tab\" target=\"_blank\">Injector.NET</a>": "Pehelysúlyú IOC konténer"
     },
     "Egyéb": {
       "": "<b>Nyelvismeret:</b> angol (társalgás, dokumentáció írás), középfokú nyelvvizsga<br><br><b>Jogosítvány:</b> „B” kategóriás, saját kocsi"
