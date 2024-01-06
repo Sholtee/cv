@@ -69,7 +69,7 @@
       "Frameworks (testing)": "NUnit, DUnit, Jasmine, Karma, pytest",
       "Automation ": "PowerShell, Grunt",
       "Containerization": "Docker",
-      "Cloud": "AWS",
+      "Cloud": "AWS (mostly used services: Lambda, ECS, S3, Aurora, CloudFront, Cloudformation)",
       "CI/CD": "AppVeyor, Travis",
       "Programming languages": "C#, Delphi/Free Pascal, JS, Python",
       "Query languages": "SQL (MySQL, PostgreSQL)",
