@@ -12,7 +12,6 @@
 </template>
 
 <script>
-import axios from 'axios';
 import contents from  '../assets/content.json';
 
 export default {
@@ -31,7 +30,7 @@ export default {
   },
   methods: {
     async setContent(i) {
-      const {data} = await axios.get(contents[i]);
+      const data = await (await fetch(contents[i])).json();
       this.content = data;
     }
   },
