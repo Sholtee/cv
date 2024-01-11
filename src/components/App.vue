@@ -30,8 +30,7 @@ export default {
   },
   methods: {
     async setContent(i) {
-      const data = await (await fetch(contents[i])).json();
-      this.content = data;
+      this.content = await (await fetch(contents[i])).json();
     }
   },
   computed: {
