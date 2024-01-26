@@ -95,6 +95,9 @@
       "Forex Raktár (raktárkezelő alkalmazás)": "front-end, <b>vezető</b> fejlesztő",
       "<a href=\"https://intelix.sophos.com\" target=\"_blank\">Sophos Intelix UI</a>": "back-end, front-end fejlesztő"
     },
+    "Díjak": {
+      "Sophos X-Ops Award (2024)": "<img style=\"width:15rem;\" src=\"assets/x-ops.png\"/>"
+    },
     "Referenciák (front-end)": {
       "<a href=\"https://sholtee.github.io/shop\" target=\"_blank\">Állateleség WebShop</a>": "POC projekt",
       "<a href=\"https://sholtee.github.io/katlan-kt\" target=\"_blank\">Katlan kaputechnika</a>": "statikus app, <b>JS framework nélkül</b>",

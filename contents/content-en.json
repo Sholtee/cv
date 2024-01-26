@@ -94,6 +94,9 @@
       "Forex Raktár (warehouse management app)": "front-end, <b>lead</b> developer",
       "<a href=\"https://intelix.sophos.com\" target=\"_blank\">Sophos Intelix UI</a>": "back-end, front-end developer"
     },
+    "Awards": {
+      "Sophos X-Ops Award (2024)": "<img style=\"width:15rem;\" src=\"assets/x-ops.png\"/>"
+    },
     "References (front-end)": {
       "<a href=\"https://sholtee.github.io/shop\" target=\"_blank\">Pet food WebShop</a>": "POC project",
       "<a href=\"https://sholtee.github.io/katlan-kt\" target=\"_blank\">Katlan kaputechnika</a>": "static app, <b>without JS framework</b>",
