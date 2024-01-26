@@ -60,6 +60,7 @@ tbody
     > .content
         will-change: background-color
         transition: background-color $default-transition-len
+        break-inside: avoid
 
         > .key
             text-align: right
