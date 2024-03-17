@@ -34,7 +34,7 @@
       "Cloud (AWS)": {
         "type": "indicator",
         "max": 5,
-        "current": 3.5
+        "current": 3
       }
     },
     "Skills (other)": {
@@ -46,7 +46,7 @@
       "Communication": {
         "type": "indicator",
         "max": 5,
-        "current": 4
+        "current": 3
       },
       "Multitasking": {
         "type": "indicator",
@@ -55,13 +55,13 @@
       }
     },
     "Studies": {
+      "<i>2001 – 2005</i>": "<b>Széchenyi István High School</b>, advanced level IT, Pécs",
+      "<i>2005</i>": "<i>Software operator</i> (OKJ), <i>ECDL</i> (5 modules)",
       "<i>2005 – 2010</i>": "<b>University of Pécs</b>",
       "Faculty": "TTK",
       "Department": "Programmer",
       "Final exam": "Rating: 4",
-      "Thesis": "<i>Resource monitoring with Yahoo widgets</i>, rating: 5",
-      "<i>2005</i>": "<i>Software operator</i> (OKJ), <i>ECDL</i> (5 modules)",
-      "<i>2001 – 2005</i>": "<b>Széchenyi István High School</b>, advanced level IT, Pécs"
+      "Thesis": "<i>Resource monitoring with Yahoo widgets</i>, rating: 5"
     },
     "Developer knowledge": {
       "Code editors": "Visual Studio, RAD Studio, Lazarus, WebStorm, LinqPad, MySQL Workbench, pgAdmin",
@@ -105,6 +105,9 @@
     "References (back-end)": {
       "<a href=\"https://www.nuget.org/packages/proxygen.net#readme-body-tab\" target=\"_blank\">ProxyGen.NET</a>": ".NET proxy generator powered by Roslyn",
       "<a href=\"https://www.nuget.org/packages/injector.net#readme-body-tab\" target=\"_blank\">Injector.NET</a>": "A featherweight dependency injector written in C#"
+    },
+    "References (cloud)": {
+      "<a href=\"https://github.com/Sholtee/aws\" target=\"_blank\">AWS Playground</a>": "Home of my AWS related stuffs"
     },
     "Other": {
       "": "<b>Language knowledge:</b> english (conversational level), „B” type language exam<br><br><b>Driver license:</b> „B” type, own car"

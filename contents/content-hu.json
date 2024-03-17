@@ -34,7 +34,7 @@
       "Cloud (AWS)": {
         "type": "indicator",
         "max": 5,
-        "current": 3.5
+        "current": 3
       }
     },
     "Készségek (egyéb)": {
@@ -46,7 +46,7 @@
       "Kommunikáció": {
         "type": "indicator",
         "max": 5,
-        "current": 4
+        "current": 3
       },
       "Több feladat párhuzamos végzése": {
         "type": "indicator",
@@ -55,14 +55,14 @@
       }
     },
     "Tanulmányok": {
+      "<i>2001 – 2005</i>": "<b>Széchenyi István Gimnázium</b>, emelt szintű informatika, Pécs",
+      "<i>2005</i>": "<i>Számítástechnikai-Szoftverüzemeltető</i> (OKJ), <i>ECDL</i> vizsga (5 modul)",
       "<i>2005 – 2010</i>": "<b>Pécsi Tudományegyetem</b>",
       "Kar": "Természettudományi Kar",
       "Szak": "Programtervező informatikus szak",
       "Szakirány": "Alkalmazói szakirány",
       "Záróvizsga": "Értékelés: 4",
-      "Diplomamunka": "<i>Rendszererőforrások monitorozása Yahoo minialkalmazással</i>, értékelés: 5",
-      "<i>2005</i>": "<i>Számítástechnikai-Szoftverüzemeltető</i> (OKJ), <i>ECDL</i> vizsga (5 modul)",
-      "<i>2001 – 2005</i>": "<b>Széchenyi István Gimnázium</b>, emelt szintű informatika, Pécs"
+      "Diplomamunka": "<i>Rendszererőforrások monitorozása Yahoo minialkalmazással</i>, értékelés: 5"
     },
     "Fejlesztői ismeretek": {
       "Kódszerkesztő": "Visual Studio, RAD Studio, Lazarus, WebStorm, LinqPad, MySQL Workbench, pgAdmin",
@@ -106,6 +106,9 @@
     "Referenciák (back-end)": {
       "<a href=\"https://www.nuget.org/packages/proxygen.net#readme-body-tab\" target=\"_blank\">ProxyGen.NET</a>": ".NET proxy generátor (Roslyn alapokon)",
       "<a href=\"https://www.nuget.org/packages/injector.net#readme-body-tab\" target=\"_blank\">Injector.NET</a>": "Pehelysúlyú IOC konténer"
+    },
+    "Referenciák (cloud)": {
+      "<a href=\"https://github.com/Sholtee/aws\" target=\"_blank\">AWS Playground</a>": "AWS játszóterem"
     },
     "Egyéb": {
       "": "<b>Nyelvismeret:</b> angol (társalgás, dokumentáció írás), középfokú nyelvvizsga<br><br><b>Jogosítvány:</b> „B” kategóriás, saját kocsi"
