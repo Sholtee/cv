@@ -54,5 +54,5 @@ export default {
                 height: 2px
                 left: 0
                 top: -0.5rem
-                background-color: #85ffbb
+                background-color: $header-bg
 </style>
