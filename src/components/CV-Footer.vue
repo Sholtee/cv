@@ -29,6 +29,8 @@ export default {
 @media print
     tfoot
         display: table-row-group
+        break-before: avoid
+        break-inside: auto
 
 td
     padding: $cell-padding
