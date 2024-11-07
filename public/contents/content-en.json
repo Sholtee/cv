@@ -52,6 +52,11 @@
         "type": "indicator",
         "max": 5,
         "current": 4
+      },
+      "English": {
+        "type": "indicator",
+        "max": 10,
+        "current": 5
       }
     },
     "Studies": {
