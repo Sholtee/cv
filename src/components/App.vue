@@ -7,6 +7,7 @@
 #app
   cv-content
     cv-language(:languages="languages" v-on:language-selected="setContent")
+    cv-print
     cv-table(v-if="content" :content="content")
     cv-build-date(v-if="content" :locale="content.locale")
 </template>
@@ -20,6 +21,7 @@ export default {
     'cv-content':    () => import('./CV-Content.vue'),
     'cv-table':      () => import('./CV-Table.vue'),
     'cv-language':   () => import('./CV-Language.vue'),
+    'cv-print':      () => import('./CV-Print.vue'),
     'cv-build-date': () => import('./CV-BuildDate.vue')
   },
   data() {

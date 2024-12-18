@@ -73,6 +73,9 @@ tbody
         &:hover
             background-color: $row-bg
 
+            @media print
+                background-color: unset
+
     &:last-of-type > tr:last-of-type > td
         padding-bottom: $cell-spacing
 </style>

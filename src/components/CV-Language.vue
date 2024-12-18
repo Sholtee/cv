@@ -39,6 +39,9 @@ export default {
     padding: calc(#{$min-margin} / 2)
     z-index: 100
 
+    @media print
+        display: none
+
     > .flag-icon
         &:not(:first-of-type)
             margin-left: calc(#{$min-margin} / 2)
