@@ -32,8 +32,12 @@ module.exports = {
   },
   pages: {
     index: {
-      entry: 'src/scripts/main.js',
+      entry: 'src/scripts/index.js',
       template: 'src/index.pug'
+    },
+    error: {
+      entry: 'src/scripts/error.js',
+      template: 'src/error.pug'
     }
   }
 };
