@@ -158,7 +158,7 @@
       "<a href=\"https://www.nuget.org/packages/injector.net#readme-body-tab\" target=\"_blank\">Injector.NET</a>": {
         "type": "text",
         "text": "Pehelysúlyú IOC konténer",
-        "tags": [".NET Core", "netstandard", "DI"]
+        "tags": [".NET Core", "netstandard", "DI", "NuGet"]
       }
     },
     "Referenciák (cloud)": {

@@ -157,7 +157,7 @@
       "<a href=\"https://www.nuget.org/packages/injector.net#readme-body-tab\" target=\"_blank\">Injector.NET</a>": {
         "type": "text",
         "text": "A featherweight dependency injector written in C#",
-        "tags": [".NET Core", "netstandard", "DI"]
+        "tags": [".NET Core", "netstandard", "DI", "NuGet"]
       }
     },
     "References (cloud)": {
