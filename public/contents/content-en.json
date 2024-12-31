@@ -80,7 +80,7 @@
       "Query languages": "SQL (MySQL, PostgreSQL)",
       "Template languages": "PUG-HAML-HTML, SASS-SCSS-CSS",
       "Version control": "Git",
-      "GitHub": "<a href='https://github.com/sholtee'>github.com/sholtee</a>",
+      "GitHub": "<a href=\"https://github.com/sholtee\" target=\"_blank\">github.com/sholtee</a>",
       "Methodologies": "Scrum, XP, TDD, <strike>PDD (Panic Driven Development)</strike>",
       "Package managers": "NuGet, NPM, Pip"
     },
