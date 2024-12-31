@@ -49,5 +49,5 @@ export default {
 .build-date
     color: rgba(0, 0, 0, .3)
     text-align: right
-    margin: $min-margin
+    margin: $margin-small
 </style>

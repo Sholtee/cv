@@ -36,7 +36,7 @@ export default {
 .language-selector
     position: absolute
     display: flex
-    padding: calc(#{$min-margin} / 2)
+    padding: calc(#{$margin-small} / 2)
     z-index: 100
 
     @media print
@@ -44,7 +44,7 @@ export default {
 
     > .flag-icon
         &:not(:first-of-type)
-            margin-left: calc(#{$min-margin} / 2)
+            margin-left: calc(#{$margin-small} / 2)
 
         &:not(.selected)
             cursor: pointer

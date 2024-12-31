@@ -74,7 +74,7 @@
       "Frameworks (testing)": "NUnit, DUnit, Jasmine, Karma, pytest",
       "Automation ": "PowerShell, Grunt",
       "Containerization": "Docker",
-      "Cloud": "AWS (mostly used services: Lambda, ECS, ECR, S3, Aurora, CloudFront, CloudFormation, CloudWatch)",
+      "Cloud": "AWS, LocalStack<br>(mostly used services: Lambda, ECS, ECR, S3, Aurora, CloudFront, CloudFormation, CloudWatch)",
       "CI/CD": "AppVeyor, Travis",
       "Programming languages": "C#, Delphi/Free Pascal, JS, Python",
       "Query languages": "SQL (MySQL, PostgreSQL)",
@@ -92,20 +92,61 @@
       "<i>2022-currently</i>": "<b>Sophos</b>, <i>Senior</i> full-stack developer"
     },
     "Notable projects": {
-      "Országos Kompetencia Mérés (OKM)": "back-end, front-end developer",
-      "Pedagógus Életpálya Modell (PEM) messenger": "back-end developer",
-      "Közösségi Szociális Szolgálat (KÖSSZ) app": "back-end developer",
-      "Érettségi Feladatlapok Adminisztrációs és Kereső rendszere": "back-end, front-end, <b>lead</b> developer",
-      "Forex Raktár (warehouse management app)": "front-end, <b>lead</b> developer",
-      "<a href=\"https://intelix.sophos.com\" target=\"_blank\">Sophos Intelix UI</a>": "back-end, front-end developer"
+      "Országos Kompetencia Mérés (OKM)": {
+        "type": "text",
+        "text": "back-end, front-end developer",
+        "tags": ["ServiceStack", "PostgreSQL", "Angular.JS"]
+      },
+      "Pedagógus Életpálya Modell (PEM) messenger": {
+        "type": "text",
+        "text": "back-end developer",
+        "tags": ["ServiceStack", "MySQL"]
+      },
+      "Közösségi Szociális Szolgálat (KÖSSZ) app": {
+        "type": "text",
+        "text": "back-end developer",
+        "tags": ["Custom REST framework", "MySQL"]
+      },
+      "Érettségi Feladatlapok Adminisztrációs és Kereső rendszere": {
+        "type": "text",
+        "text": "back-end, front-end, <b>lead</b> developer",
+        "tags": ["ASP.NET", "MySQL", "Vue.JS"]
+      },
+      "Forex Raktár (warehouse management app)": {
+        "type": "text",
+        "text": "front-end, <b>lead</b> developer",
+        "tags": ["Vue.JS"]
+      },
+      "<a href=\"https://intelix.sophos.com\" target=\"_blank\">Sophos Intelix UI</a>": {
+        "type": "text",
+        "text": "back-end, front-end developer",
+        "tags": ["Flask", "MySQL", "Vue.JS", "AWS"]
+      },
+      "<a href=\"https://aws.amazon.com/marketplace/pp/prodview-k4jb2agd65ses\" target=\"_blank\">SophosLabs Intelix (SaaS)</a>": {
+        "type": "text",
+        "text": "back-end developer",
+        "tags": ["Flask", "AWS"]
+      }
     },
     "Awards": {
       "Sophos X-Ops Award (2024)": "<img style=\"width:15rem;\" src=\"assets/x-ops.png\"/>"
     },
     "References (front-end)": {
-      "<a href=\"https://sholtee.github.io/shop\" target=\"_blank\">Pet food WebShop</a>": "POC project",
-      "<a href=\"https://sholtee.github.io/katlan-kt\" target=\"_blank\">Katlan kaputechnika</a>": "static app, <b>without JS framework</b>",
-      "<a href=\"https://sholtee.github.io/cv\" target=\"_blank\">CV</a>": "Resume"
+      "<a href=\"https://sholtee.github.io/shop\" target=\"_blank\">Pet food WebShop</a>": {
+        "type": "text",
+        "text": "POC project",
+        "tags": ["Vue.JS", "PUG", "Sass"]
+      },
+      "<a href=\"https://sholtee.github.io/katlan-kt\" target=\"_blank\">Katlan kaputechnika</a>": {
+        "type": "text",
+        "text": "Company home",
+        "tags": ["JS", "PUG", "Sass", "without framework"]
+      },
+      "<a href=\"https://sholtee.github.io/cv\" target=\"_blank\">CV</a>": {
+        "type": "text",
+        "text": "Resume",
+        "tags": ["Vue.JS", "PUG", "Sass"]
+      }
     },
     "References (back-end)": {
       "<a href=\"https://www.nuget.org/packages/proxygen.net#readme-body-tab\" target=\"_blank\">ProxyGen.NET</a>": ".NET proxy generator powered by Roslyn",

@@ -31,7 +31,7 @@ export default {
 
 .print
     position: absolute
-    padding: calc(#{$min-margin} / 2)
+    padding: calc(#{$margin-small} / 2)
     z-index: 100
     right: 0
     will-change: background-color

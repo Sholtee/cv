@@ -43,7 +43,7 @@ td
             content: attr(data-subtitle)
             font-size: 1rem
             display: block
-            margin-top: $min-margin
+            margin-top: $margin-small
 
     @media (max-width: #{$table-width})
         > img

@@ -5,9 +5,7 @@
 
 <template lang="pug">
 td
-    cv-secret(v-if="content.type == 'secret'" :value="content")
-    cv-indicator(v-else-if="content.type == 'indicator'" :value="content")
-    span(v-else-if="content.type == 'text'" v-html="content.text")
+    component(:is="component" :value="content")
 </template>
 
 <script>
@@ -15,22 +13,28 @@ export default {
   name: 'cv-cell',
   components: {
     'cv-secret':    () => import('./CV-Secret.vue'),
-    'cv-indicator': () => import('./CV-Indicator.vue')
+    'cv-indicator': () => import('./CV-Indicator.vue'),
+    'cv-text':      () => import('./CV-Text.vue')
   },
   props: {
     value: {
       type: [String, Object],
-      validator: val => val.constructor === String || ['type'].every(prop => prop in val)
+      validator: value => typeof value === 'string' || 'type' in value
     }
   },
-  data() {
-    const {value} = this;
-
-    return {
-      content: value.constructor === String
-        ? {text: value, type: "text"}
-        : value
-    };
+  computed: {
+    content() {
+      const {value} = this;
+      return typeof value !== 'string' ? value : {text: value, type: "text"};
+    },
+    component() {
+      switch (this.content.type){
+        case 'secret': return 'cv-secret';
+        case 'indicator': return 'cv-indicator';
+        case 'text': return 'cv-text';
+        default: throw 'Unknown content type';
+      }
+    }
   }
 }
 </script>

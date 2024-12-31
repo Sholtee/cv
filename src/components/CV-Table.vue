@@ -51,6 +51,6 @@ export default {
         border: none
 
     @media (max-width: #{$table-width})
-        padding-left: $min-margin
-        padding-right: $min-margin
+        padding-left: $margin-small
+        padding-right: $margin-small
 </style>
