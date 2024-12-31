@@ -34,6 +34,7 @@ export default {
 
 tbody
     $cell-spacing: 2rem
+    break-inside: avoid
 
     > .header, .content
         line-height: 1.2
@@ -60,7 +61,6 @@ tbody
     > .content
         will-change: background-color
         transition: background-color $default-transition-len
-        break-inside: avoid
 
         > .key
             text-align: right
