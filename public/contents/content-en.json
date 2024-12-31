@@ -149,8 +149,16 @@
       }
     },
     "References (back-end)": {
-      "<a href=\"https://www.nuget.org/packages/proxygen.net#readme-body-tab\" target=\"_blank\">ProxyGen.NET</a>": ".NET proxy generator powered by Roslyn",
-      "<a href=\"https://www.nuget.org/packages/injector.net#readme-body-tab\" target=\"_blank\">Injector.NET</a>": "A featherweight dependency injector written in C#"
+      "<a href=\"https://www.nuget.org/packages/proxygen.net#readme-body-tab\" target=\"_blank\">ProxyGen.NET</a>": {
+        "type": "text",
+        "text": ".NET proxy generator powered by Roslyn",
+        "tags": [".NET Core", "netstandard", "Roslyn", "NuGet"]
+      },
+      "<a href=\"https://www.nuget.org/packages/injector.net#readme-body-tab\" target=\"_blank\">Injector.NET</a>": {
+        "type": "text",
+        "text": "A featherweight dependency injector written in C#",
+        "tags": [".NET Core", "netstandard", "DI"]
+      }
     },
     "References (cloud)": {
       "<a href=\"https://github.com/Sholtee/aws\" target=\"_blank\">AWS Playground</a>": "Home of my AWS related stuffs"

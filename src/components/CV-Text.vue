@@ -43,6 +43,7 @@ export default {
       background-color: $font-color
       color: $row-bg
       border-radius: 5px
+      white-space: nowrap
 
       &:not(:last-of-type)
         margin-right: $margin-tiny
