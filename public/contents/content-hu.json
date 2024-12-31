@@ -75,7 +75,7 @@
       "Keretrendszer (teszt)": "NUnit, DUnit, Jasmine, Karma, pytest",
       "Feladat automatizáció": "PowerShell, Grunt",
       "Konténerizáció": "Docker",
-      "Felhő": "AWS (leginkább használt szolgáltatások: Lambda, ECS, ECR, S3, Aurora, CloudFront, CloudFormation, CloudWatch)",
+      "Felhő": "AWS, LocalStack<br>(leginkább használt szolgáltatások: Lambda, ECS, ECR, S3, Aurora, CloudFront, CloudFormation, CloudWatch)",
       "CI/CD": "AppVeyor, Travis",
       "Programozási nyelvek": "C#, Delphi/Free Pascal, JS, Python",
       "Lekérdező nyelvek": "SQL (MySQL, PostgreSQL)",
@@ -93,24 +93,73 @@
       "<i>2022-jelenleg is</i>": "<b>Sophos</b>, <i>Senior</i> full-stack fejlesztő"
     },
     "Jelentősebb projektek": {
-      "Országos Kompetencia Mérés (OKM)": "back-end, front-end fejlesztő",
-      "Pedagógus Életpálya Modell (PEM) üzenetküldő": "back-end fejlesztő",
-      "Közösségi Szociális Szolgálat (KÖSSZ) alkalmazás": "back-end fejlesztő",
-      "Érettségi Feladatlapok Adminisztrációs és Kereső rendszere": "back-end, front-end, <b>vezető</b> fejlesztő",
-      "Forex Raktár (raktárkezelő alkalmazás)": "front-end, <b>vezető</b> fejlesztő",
-      "<a href=\"https://intelix.sophos.com\" target=\"_blank\">Sophos Intelix UI</a>": "back-end, front-end fejlesztő"
+      "Országos Kompetencia Mérés (OKM)": {
+        "type": "text",
+        "text": "back-end, front-end fejlesztő",
+        "tags": ["ServiceStack", "PostgreSQL", "Angular.JS"]
+      },
+      "Pedagógus Életpálya Modell (PEM) messenger": {
+        "type": "text",
+        "text": "back-end fejlesztő",
+        "tags": ["ServiceStack", "MySQL"]
+      },
+      "Közösségi Szociális Szolgálat (KÖSSZ) app": {
+        "type": "text",
+        "text": "back-end fejlesztő",
+        "tags": ["Custom REST framework", "MySQL"]
+      },
+      "Érettségi Feladatlapok Adminisztrációs és Kereső rendszere": {
+        "type": "text",
+        "text": "back-end, front-end, <b>vezető</b> fejlesztő",
+        "tags": ["ASP.NET", "MySQL", "Vue.JS"]
+      },
+      "Forex Raktár (warehouse management app)": {
+        "type": "text",
+        "text": "front-end, <b>vezető</b> fejlesztő",
+        "tags": ["Vue.JS"]
+      },
+      "<a href=\"https://intelix.sophos.com\" target=\"_blank\">Sophos Intelix UI</a>": {
+        "type": "text",
+        "text": "back-end, front-end fejlesztő",
+        "tags": ["Flask", "MySQL", "Vue.JS", "AWS"]
+      },
+      "<a href=\"https://aws.amazon.com/marketplace/pp/prodview-k4jb2agd65ses\" target=\"_blank\">SophosLabs Intelix (SaaS)</a>": {
+        "type": "text",
+        "text": "back-end fejlesztő",
+        "tags": ["Flask", "AWS"]
+      }
     },
     "Díjak": {
       "Sophos X-Ops Award (2024)": "<img style=\"width:15rem;\" src=\"assets/x-ops.png\"/>"
     },
     "Referenciák (front-end)": {
-      "<a href=\"https://sholtee.github.io/shop\" target=\"_blank\">Állateleség WebShop</a>": "POC projekt",
-      "<a href=\"https://sholtee.github.io/katlan-kt\" target=\"_blank\">Katlan kaputechnika</a>": "statikus app, <b>JS framework nélkül</b>",
-      "<a href=\"https://sholtee.github.io/cv\" target=\"_blank\">CV</a>": "Önéletrajt"
+      "<a href=\"https://sholtee.github.io/shop\" target=\"_blank\">Pet food WebShop</a>": {
+        "type": "text",
+        "text": "POC projekt",
+        "tags": ["Vue.JS", "PUG", "Sass"]
+      },
+      "<a href=\"https://sholtee.github.io/katlan-kt\" target=\"_blank\">Katlan kaputechnika</a>": {
+        "type": "text",
+        "text": "Cég honlap",
+        "tags": ["JS", "PUG", "Sass", "without framework"]
+      },
+      "<a href=\"https://sholtee.github.io/cv\" target=\"_blank\">CV</a>": {
+        "type": "text",
+        "text": "Önéletrajz",
+        "tags": ["Vue.JS", "PUG", "Sass"]
+      }
     },
     "Referenciák (back-end)": {
-      "<a href=\"https://www.nuget.org/packages/proxygen.net#readme-body-tab\" target=\"_blank\">ProxyGen.NET</a>": ".NET proxy generátor (Roslyn alapokon)",
-      "<a href=\"https://www.nuget.org/packages/injector.net#readme-body-tab\" target=\"_blank\">Injector.NET</a>": "Pehelysúlyú IOC konténer"
+      "<a href=\"https://www.nuget.org/packages/proxygen.net#readme-body-tab\" target=\"_blank\">ProxyGen.NET</a>": {
+        "type": "text",
+        "text": ".NET proxy generátor (Roslyn alapokon)",
+        "tags": [".NET Core", "netstandard", "Roslyn", "NuGet"]
+      },
+      "<a href=\"https://www.nuget.org/packages/injector.net#readme-body-tab\" target=\"_blank\">Injector.NET</a>": {
+        "type": "text",
+        "text": "Pehelysúlyú IOC konténer",
+        "tags": [".NET Core", "netstandard", "DI"]
+      }
     },
     "Referenciák (cloud)": {
       "<a href=\"https://github.com/Sholtee/aws\" target=\"_blank\">AWS Playground</a>": "AWS játszóterem"
@@ -118,9 +167,5 @@
     "Egyéb": {
       "": "<b>Nyelvismeret:</b> angol (társalgás, dokumentáció írás), középfokú nyelvvizsga<br><br><b>Jogosítvány:</b> „B” kategóriás, saját kocsi"
     }
-  },
-  "footer": {
-    "title": "Kísérő levél",
-    "text": ""
   }
 }
