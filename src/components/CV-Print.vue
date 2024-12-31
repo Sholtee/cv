@@ -8,11 +8,19 @@ img.print(src="../assets/print.svg" @click="print")
 </template>
 
 <script>
+import EventBus from '@/scripts/eventbus';
+
 export default {
   name: 'cv-print',
   methods: {
-    print() {
-      window.print();
+    async print() {
+      EventBus.$emit('print', true);
+      await this.$nextTick();
+      try {
+        window.print();
+      } finally {
+        EventBus.$emit('print', false);
+      }
     }
   }
 }
