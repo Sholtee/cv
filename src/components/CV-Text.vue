@@ -30,11 +30,10 @@ export default {
   flex-flow: row
 
   > .tag-holder
-    display: flex
-    flex-direction: row
     margin-left: $margin-tiny
 
     > .tag
+      display: inline-block
       font-size: .7em
       padding: .5em
       line-height: 5px
