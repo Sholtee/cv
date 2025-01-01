@@ -158,6 +158,11 @@
         "type": "text",
         "text": "A featherweight dependency injector written in C#",
         "tags": [".NET Core", "netstandard", "DI", "NuGet"]
+      },
+      "<a href=\"https://github.com/Sholtee/warehouse/tree/master\" target=\"_blank\">Warehouse API (boilerplate)</a>": {
+        "type": "text",
+        "text": "REST API over ASP.NET Core running on AWS infra",
+        "tags": [".NET Core", "ASP.NET Core", "AWS", "MySQL"]
       }
     },
     "References (cloud)": {

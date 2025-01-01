@@ -159,6 +159,11 @@
         "type": "text",
         "text": "Pehelysúlyú IOC konténer",
         "tags": [".NET Core", "netstandard", "DI", "NuGet"]
+      },
+      "<a href=\"https://github.com/Sholtee/warehouse/tree/master\" target=\"_blank\">Warehouse API (boilerplate)</a>": {
+        "type": "text",
+        "text": "ASP.NET Core REST API AWS infrastruktúrában",
+        "tags": [".NET Core", "ASP.NET Core", "AWS", "MySQL"]
       }
     },
     "Referenciák (cloud)": {
