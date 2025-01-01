@@ -2,9 +2,9 @@
  *  document.sass                                                                *
  *  Author: Denes Solti                                                          *
  *********************************************************************************/
-html
-  @import "consts"
+@import "consts"
 
+html
   font-size: 12px
 
   @media (min-width: 85em)
@@ -20,11 +20,14 @@ html
     a
       color: $blue
 
-@media print
-  body
-    position: static !important
-    -webkit-print-color-adjust: exact
+    @media print
+      position: static !important
+      -webkit-print-color-adjust: exact
 
 @page
   size: auto
   margin: 0
+  padding-top: $cell-padding
+
+@page :first
+  padding-top: 0
