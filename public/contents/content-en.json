@@ -133,6 +133,11 @@
       "Sophos X-Ops Award (2024)": "<img style=\"width:15rem;\" src=\"assets/x-ops.png\"/>"
     },
     "References (front-end)": {
+      "<a href=\"https://github.com/Sholtee/hiresphere\" target=\"_blank\">HireSphere Portal</a>": {
+        "type": "text",
+        "text": "Home Assignment",
+        "tags": ["Vue.JS", "PUG", "Sass"]
+      },
       "<a href=\"https://sholtee.github.io/shop\" target=\"_blank\">Pet food WebShop</a>": {
         "type": "text",
         "text": "POC project",
